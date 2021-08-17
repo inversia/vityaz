@@ -1,0 +1,53 @@
+/* @font-face {
+    font-family: 'Forward-extra';
+    src: url('./fonts/Forward-extra.otf');
+} */
+
+/* @font-face {
+    font-family: 'Forward';
+    src: url('./fonts/Forward.otf');
+} */
+
+div {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    --mega-padding: 7vw;
+    font-family: sans-serif;
+    font-family: 'Forward-extra', sans-serif;
+    --global-shadow: 0vw 0vw 3.906vw rgba(0, 0, 0, 0.219);
+    position: relative;
+    letter-spacing: 0.04em;
+    overflow-x: hidden !important;
+}
+
+h1 {
+    font-size: 13.3vw;
+    font-weight: 100;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 0.8em;
+}
+
+h1::after {
+    content: '•';
+    position: absolute;
+    top: -1em;
+    left: 50%;
+    transform: scale(0.9);
+    /* height: 1vw;
+    width: 1vw;
+    border:1px black solid;
+    border-radius: 100%; */
+    display: block;
+}
+
+strong {
+    font-weight: bold;
+}
