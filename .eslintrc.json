@@ -1,0 +1,89 @@
+// See http://www.zsoltnagy.eu/use-eslint-like-a-pro-with-es6-and-react/
+{
+    "plugins": ["react", "@typescript-eslint"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "project": "./tsconfig.json",
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "extraFileExtensions": [".mjs"]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "env": {
+        "es6": true,
+        "browser": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "prettier"
+    ],
+
+    // first argument: 0 - silent, 1 - warning, 2 - error
+    "rules": {
+        "react/prop-types": 0, // no requiring of prop types
+        "react/display-name": 0, // allow anonymous components
+        "strict": [2, "safe"],
+        "no-debugger": 2,
+        "brace-style": [2, "1tbs", { "allowSingleLine": true }],
+        "no-trailing-spaces": [2, { "skipBlankLines": true }],
+        "keyword-spacing": 2,
+        "spaced-comment": [2, "always"],
+        "vars-on-top": 0, // Disable: all 'var' declarations must be at the top of the function scope
+        "no-undef": 0,
+        "no-undefined": 0,
+        "comma-dangle": [0, "never"],
+        // "quotes": [2, "single"],
+        "semi": [1, "never"],
+        "guard-for-in": 0, // allow iterating with for..in without checking for Object.hasOwnProperty
+        "no-eval": 2,
+        "no-with": 2,
+        "valid-typeof": 2,
+        "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+        "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+        "no-continue": 1,
+        "no-unreachable": 1,
+        "no-unused-expressions": 1,
+        "no-magic-numbers": 0,
+        "no-inner-declarations": 0,
+        "no-constant-condition": 0,
+        "no-empty-function": 0,
+        //"max-len":            [1, 120, 4],
+        "react/prefer-es6-class": 1,
+        "@typescript-eslint/explicit-function-return-type": 0,
+        "@typescript-eslint/no-use-before-define": 0,
+        "@typescript-eslint/prefer-regexp-exec": 0,
+        "@typescript-eslint/explicit-module-boundary-types": 0,
+        "@typescript-eslint/no-non-null-assertion": 0,
+        "@typescript-eslint/restrict-plus-operands": 0,
+        "@typescript-eslint/no-extra-semi": 0,
+        "@typescript-eslint/no-empty-function": ["off"],
+        "@typescript-eslint/ban-ts-comment": 0,
+
+        "no-restricted-syntax": [
+            "error",
+            {
+                "selector": "ExportDefaultDeclaration",
+                "message": "Prefer named exports"
+            }
+        ],
+
+        "react-hooks/exhaustive-deps": [
+            "error",
+            {
+                "additionalHooks": "useQuery"
+            }
+        ]
+    }
+}
