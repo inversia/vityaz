@@ -5,7 +5,7 @@ panic.configure({ projectRoot: '/Users/new/if8' })
 
 // import './fonts.css'
 import './reset.css'
-import './index.css'
+import './index.scss'
 
 import { App } from './App'
 

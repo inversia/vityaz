@@ -1,8 +1,10 @@
 import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import 'panic-overlay' // TODO: disable in production (conditional import?)
+// import { facebook } from '~icons'
 
-import { Main } from '~/Main'
+import { Main } from '~pages/Main'
+import { Menu } from '~components/Menu'
 
 export function App() {
     return (
@@ -17,9 +19,9 @@ export function App() {
 function AppContent() {
     return (
         <>
-            {/* <Topbar /> */}
+            <Menu />
             <div className="page">
-                <Route path="/" exact component={Main} />
+                <Route path="/main" exact component={Main} />
             </div>
         </>
     )

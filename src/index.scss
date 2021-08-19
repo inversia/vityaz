@@ -24,6 +24,17 @@ body {
     position: relative;
     letter-spacing: 0.04em;
     overflow-x: hidden !important;
+
+    .page {
+        border: 2px solid red;
+        min-height: 100vh;
+        position: relative;
+        background-image: url(/icons/circular_shadow.svg);
+        background-repeat: no-repeat;
+        // background-position: 21vh -23vh;
+        background-position: 15vw -14vw;
+        background-size: 66%;
+    }
 }
 
 h1 {
@@ -33,19 +44,19 @@ h1 {
     display: block;
     text-align: center;
     margin: 0.8em;
-}
 
-h1::after {
-    content: '•';
-    position: absolute;
-    top: -1em;
-    left: 50%;
-    transform: scale(0.9);
-    /* height: 1vw;
-    width: 1vw;
-    border:1px black solid;
-    border-radius: 100%; */
-    display: block;
+    ::after {
+        content: '•';
+        position: absolute;
+        top: -1em;
+        left: 50%;
+        transform: scale(0.9);
+        /* height: 1vw;
+        width: 1vw;
+        border:1px black solid;
+        border-radius: 100%; */
+        display: block;
+    }
 }
 
 strong {
