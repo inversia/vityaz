@@ -1,4 +1,14 @@
 .page-research {
     padding: 25vw 10vw 10vw 10vw;
-    border: 1px springgreen solid;
+    // border: 1px springgreen solid;
+
+    .AI-people {
+        width: 100vw;
+        height: 40vh;
+        background-image: url(./images/AIpeople.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: scale(1.2);
+        margin-top: 10%;
+    }
 }

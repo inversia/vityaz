@@ -5,8 +5,7 @@ import 'panic-overlay' // TODO: disable in production (conditional import?)
 
 import { Main } from '~pages/Main'
 import { Research } from '~pages/Research'
-import { Menu } from '~components/Menu'
-import { Player } from '~components/Player'
+import { Menu, Player } from '~components/'
 
 export function App() {
     return (

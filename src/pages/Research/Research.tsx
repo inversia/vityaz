@@ -15,6 +15,7 @@ export function Research() {
                 While distributed training is often done on the GPU, simulation is not. In this
                 work, we propose using GPU-accelerated RL simulations as an alternative to CPU ones.
             </p>
+            <div className="AI-people"></div>
         </div>
     )
 }

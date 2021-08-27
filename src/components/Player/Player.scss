@@ -1,7 +1,33 @@
-.player-container {
-    border: rgb(0, 255, 200) 2px solid;
+.player-background {
+    // border: rgb(0, 255, 200) 2px solid;
     position: fixed;
-    height: 14vh;
-    width: 10vh;
-    background-color: aquamarine;
+    height: 45vh;
+    width: 45vh;
+    display: block;
+    background-image: url(./images/player_background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 3;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.record-one,
+.record-two {
+    height: 8vh;
+    width: 8vh;
+    background-image: url(./images/record.svg);
+    background-size: 99%;
+    background-repeat: no-repeat;
+    display: block;
+    position: fixed;
+    bottom: 3.3vh;
+    right: 6vh;
+    z-index: 4;
+    cursor: pointer;
+    // background-color: rgb(238, 255, 0);
+}
+
+.record-two {
 }

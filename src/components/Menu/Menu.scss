@@ -1,12 +1,15 @@
 .menu-wrapper {
     // border: 1px solid rgb(217, 255, 0);
-    width: 38vw;
-    height: 37vw;
+    // width: 38vw;
+    // height: 37vw;
+    width: 56vh;
+    height: 53vh;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     top: 0;
     left: -1.3vw;
     background-image: url(./images/menu.svg);
+    // background-image: url(../Player/images/player_background.svg);
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,15 +19,15 @@
         display: flex;
         flex-direction: column;
         // border: 2px solid rgb(0, 255, 191);
-        padding: 2vw 3vw;
-        font-size: 1.2vw;
+        padding: 2em 3.3em;
+        font-size: 1.5vh;
         position: relative;
         z-index: 2;
-        transition: all 0.3s ease-in-out;
+        transition: color 0.3s ease-in-out;
         // border: 1px solid springgreen;
 
         > a {
-            margin-bottom: 1vw;
+            margin-bottom: 1em;
             color: black;
             position: relative;
             z-index: 2;
@@ -54,7 +57,7 @@
                 &::after {
                     // color: rgb(161, 127, 255);
                     position: relative;
-                    color: orange;
+                    color: #e78c15;
                     white-space: nowrap;
                     // content: attr(data-descr);
                     content: attr(data-descr);
