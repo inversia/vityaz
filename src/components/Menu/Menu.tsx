@@ -8,24 +8,12 @@ export function Menu() {
         <>
             <div className="menu-wrapper">
                 <ul>
-                    <MenuLink path="/about" data-descr="About">
-                        About
-                    </MenuLink>
-                    <MenuLink path="/contacts" data-descr="Contacts">
-                        Contacts
-                    </MenuLink>
-                    <MenuLink path="/research" data-descr="Research / AI">
-                        Research / AI
-                    </MenuLink>
-                    <MenuLink path="/art" data-descr="Visual Art">
-                        Visual Art
-                    </MenuLink>
-                    <MenuLink path="/music" data-descr="Music">
-                        Music
-                    </MenuLink>
-                    <MenuLink path="/main" data-descr="Main">
-                        Main
-                    </MenuLink>
+                    <MenuLink path="/about">About</MenuLink>
+                    <MenuLink path="/contacts">Contacts</MenuLink>
+                    <MenuLink path="/research">Research / AI</MenuLink>
+                    <MenuLink path="/art">Visual Art</MenuLink>
+                    <MenuLink path="/music">Music</MenuLink>
+                    <MenuLink path="/main">Main</MenuLink>
                 </ul>
             </div>
         </>
@@ -35,7 +23,7 @@ export function Menu() {
 function MenuLink({
     path = '',
     component = Link as typeof Link | string,
-    children = null as React.ReactChild | null,
+    children = '',
     onClick = (_e: React.MouseEvent) => {}
 }) {
     const currentPath = useLocation().pathname
@@ -49,7 +37,9 @@ function MenuLink({
             to: path,
             onClick: e => {
                 onClick(e)
-            }
+            },
+            // @ts-ignore TODO
+            'data-descr': children
         },
         children
     )

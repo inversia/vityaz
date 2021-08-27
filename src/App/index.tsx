@@ -4,7 +4,9 @@ import 'panic-overlay' // TODO: disable in production (conditional import?)
 // import { facebook } from '~icons'
 
 import { Main } from '~pages/Main'
+import { Research } from '~pages/Research'
 import { Menu } from '~components/Menu'
+import { Player } from '~components/Player'
 
 export function App() {
     return (
@@ -22,7 +24,9 @@ function AppContent() {
             <Menu />
             <div className="page">
                 <Route path="/main" exact component={Main} />
+                <Route path="/research" exact component={Research} />
             </div>
+            <Player />
         </>
     )
 }

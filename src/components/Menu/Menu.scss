@@ -3,6 +3,7 @@
     width: 38vw;
     height: 37vw;
     position: fixed;
+    z-index: 2;
     top: 0;
     left: -1.3vw;
     background-image: url(./images/menu.svg);
@@ -18,56 +19,82 @@
         padding: 2vw 3vw;
         font-size: 1.2vw;
         position: relative;
+        z-index: 2;
+        transition: all 0.3s ease-in-out;
+        // border: 1px solid springgreen;
 
         > a {
             margin-bottom: 1vw;
             color: black;
+            position: relative;
+            z-index: 2;
+
             // text-shadow: blueviolet 5px 5px;
 
             &.active {
-                text-shadow: rgb(255, 218, 6) 0.1vw 0.1vw;
+                // text-shadow: rgb(255, 218, 6) 0.1vw 0.1vw;
 
                 &:hover {
-                    text-shadow: rgb(255, 64, 6) 0.2vw 0.2vw;
+                    // text-shadow: rgb(255, 64, 6) 0.2vw 0.2vw;
 
                     &::after {
                         color: aquamarine;
                         position: relative;
                         // content: attr(data-descr);
-                        content: '(' attr(data-descr) ')';
-                        font-size: 1vw;
+                        content: attr(data-descr);
+                        font-size: 1em;
                         position: absolute;
-                        left: 20px;
-                        top: 4px;
-                        text-shadow: rgb(6, 255, 193) 0.6vw 0.6vw;
+                        left: 1.5%;
+                        top: 1%;
+                        white-space: nowrap;
+                        // text-shadow: rgb(6, 255, 193) 0.6vw 0.6vw;
                     }
                 }
 
                 &::after {
-                    color: rgb(161, 127, 255);
+                    // color: rgb(161, 127, 255);
+                    position: relative;
+                    color: orange;
+                    white-space: nowrap;
+                    // content: attr(data-descr);
+                    content: attr(data-descr);
+                    font-size: 1em;
+                    position: absolute;
+                    left: 0.09em;
+                    top: 0em;
+                    // text-shadow: rgb(6, 255, 193) 0.01em 0.01em;
+                    // text-shadow: rgb(255, 168, 6) 0.05em 0.01em;
+                }
+            }
+
+            &:hover {
+                &::after {
+                    color: aquamarine;
                     position: relative;
                     // content: attr(data-descr);
                     content: attr(data-descr);
-                    font-size: 3vw;
+                    font-size: 1em;
                     position: absolute;
-                    left: 10px;
-                    top: 4px;
-                    text-shadow: rgb(6, 255, 193) 0.3vw 0.3vw;
+                    left: 1.3%;
+                    top: 1%;
+                    white-space: nowrap;
+                    transition: color 0.3s ease-in-out;
+                    // text-shadow: rgb(6, 255, 193) 0.6vw 0.6vw;
                 }
             }
         }
 
-        & > [data-descr]::before {
-            color: aquamarine;
-            position: relative;
-            content: attr(data-descr);
-            font-size: 1vw;
-            position: absolute;
-            left: 14px;
-            top: 4px;
-            text-shadow: rgb(31, 6, 255) 0.5vw 0.5vw;
-            content: ' (' attr(data-descr) ')';
-        }
+        // & > [data-descr]::before {
+        //     color: aquamarine;
+        //     position: relative;
+        //     content: attr(data-descr);
+        //     font-size: 1vw;
+        //     position: absolute;
+        //     left: 14px;
+        //     top: 4px;
+        //     text-shadow: rgb(31, 6, 255) 0.5vw 0.5vw;
+        //     content: ' (' attr(data-descr) ')';
+        // }
     }
 
     h1 {
