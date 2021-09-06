@@ -2,10 +2,25 @@
     padding: 25vw 10vw 10vw 10vw;
     // border: 1px springgreen solid;
 
+    .menu-plug {
+        width: 56vh;
+        height: 53vh;
+        position: fixed;
+        z-index: 4;
+        top: 0vh;
+        left: -1.9vh;
+        background-image: url(~icons/menu.svg);
+        background-position: left;
+        background-size: 110%;
+        background-repeat: no-repeat;
+        display: flex;
+    }
+
     .AI-people {
         width: 100vw;
         height: 40vh;
         background-image: url(./images/AIpeople.jpg);
+        // background-image: url(./images/AIpeople3.webp);
         background-repeat: no-repeat;
         background-size: cover;
         transform: scale(1.2);

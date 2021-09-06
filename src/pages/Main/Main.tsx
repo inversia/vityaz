@@ -1,11 +1,14 @@
 import React from 'react'
 import './Main.scss'
 
+import { PlanetaryMenu } from './PlanetaryMenu'
+
 export function Main() {
     return (
         <div className="main-wrapper">
             <div className="background-planet" />
-            <div className="planetary-menu">
+            <PlanetaryMenu />
+            {/* <div className="planetary-menu">
                 <div className="logo">
                     <span>MakoViychuk</span>
                 </div>
@@ -30,7 +33,7 @@ export function Main() {
                         <div className="music-background"></div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

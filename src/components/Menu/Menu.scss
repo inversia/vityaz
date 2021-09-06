@@ -5,10 +5,12 @@
     width: 56vh;
     height: 53vh;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
-    left: -1.3vw;
-    background-image: url(./images/menu.svg);
+    left: -1.9vh;
+
+    background-image: url(./images/menu_transparent.svg);
+    // background-image: url(./images/menu.svg);
     // background-image: url(../Player/images/player_background.svg);
     background-position: left;
     background-size: cover;
@@ -22,7 +24,7 @@
         padding: 2em 3.3em;
         font-size: 1.5vh;
         position: relative;
-        z-index: 2;
+        z-index: 16;
         transition: color 0.3s ease-in-out;
         // border: 1px solid springgreen;
 
@@ -30,7 +32,8 @@
             margin-bottom: 1em;
             color: black;
             position: relative;
-            z-index: 2;
+            z-index: 16;
+            display: block;
 
             // text-shadow: blueviolet 5px 5px;
 

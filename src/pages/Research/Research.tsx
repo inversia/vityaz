@@ -4,6 +4,7 @@ import './Research.scss'
 export function Research() {
     return (
         <div className="page-research">
+            <div className="menu-plug"></div>
             <h1>Research / AI</h1>
             <h2>GPU-Accelerated Robotics Simulation for Distributed Reinforcement Learning</h2>
             <p>
