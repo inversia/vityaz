@@ -1,21 +1,19 @@
 .menu-wrapper {
-    // border: 1px solid rgb(217, 255, 0);
-    // width: 38vw;
-    // height: 37vw;
     width: 56vh;
     height: 53vh;
     position: fixed;
     z-index: 3;
     top: 0;
     left: -1.9vh;
-
     background-image: url(./images/menu_transparent.svg);
-    // background-image: url(./images/menu.svg);
-    // background-image: url(../Player/images/player_background.svg);
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+
+    &.opaque {
+        background-image: url(~icons/menu.svg);
+    }
 
     ul {
         display: flex;

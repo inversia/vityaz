@@ -16,7 +16,8 @@
         display: flex;
     }
 
-    .AI-people {
+    .AI-people,
+    .AI-people2 {
         width: 100vw;
         height: 40vh;
         background-image: url(./images/AIpeople.jpg);
@@ -24,6 +25,21 @@
         background-repeat: no-repeat;
         background-size: cover;
         transform: scale(1.2);
-        margin-top: 10%;
+        margin: 10% 0%;
+    }
+
+    .AI-people2 {
+        background-image: url(./images/AIpeople2.png);
+    }
+
+    .adapting-simulation {
+        // background: -webkit-linear-gradient(to right, #615ecc 5%, #4ba3d1 3%, #34edd7 3%);
+        // background: -moz-linear-gradient(to right, #615ecc 5%, #4ba3d1 3%, #34edd7 3%);
+        // background: linear-gradient(to right, #615ecc 5%, #4ba3d1 3%, #34edd7 33%);
+        background: -webkit-linear-gradient(to right, #615ecc 5%, #34edd7 70%);
+        background: -moz-linear-gradient(to right, #615ecc 5%, #34edd7 70%);
+        background: linear-gradient(to right, #615ecc 5%, #34edd7 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }

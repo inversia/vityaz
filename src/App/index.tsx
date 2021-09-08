@@ -1,6 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import 'panic-overlay' // TODO: disable in production (conditional import?)
+
+import { ProvideAppContext } from './Context'
 // import { facebook } from '~icons'
 
 import { Main } from '~pages/Main'
@@ -9,11 +11,11 @@ import { Menu, Player } from '~components/'
 
 export function App() {
     return (
-        <>
+        <ProvideAppContext>
             <Router>
                 <AppContent />
             </Router>
-        </>
+        </ProvideAppContext>
     )
 }
 

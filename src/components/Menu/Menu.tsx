@@ -2,11 +2,14 @@ import React from 'react'
 import cls from 'classnames'
 import { Link, useLocation } from 'react-router-dom'
 import './Menu.scss'
+import { useAppContext } from '~App/Context'
 
 export function Menu() {
+    const { isResearchPage } = useAppContext()
+
     return (
         <>
-            <div className="menu-wrapper">
+            <div className={cls('menu-wrapper', { opaque: isResearchPage })}>
                 <ul>
                     <MenuLink path="/about">About</MenuLink>
                     <MenuLink path="/contacts">Contacts</MenuLink>
