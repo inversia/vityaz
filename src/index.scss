@@ -22,6 +22,8 @@ body {
     --mega-padding: 7vw;
     font-family: sans-serif;
 
+    --page-padding: 25vw 10vw 10vw 10vw;
+
     --global-shadow: 0vw 0vw 3.906vw rgba(0, 0, 0, 0.219);
     position: relative;
     letter-spacing: 0.04em;
@@ -43,22 +45,23 @@ body {
     // background-size: 72%;
     // z-index: 2;
 
-    &::after {
-        content: '';
-        position: absolute;
-        background-image: url(/icons/circular_shadow.svg);
-        background-repeat: no-repeat;
-        // background-position: 21vh -23vh;
-        // background-position: 15vw -14vw;
-        // background-position: 10vw 20vw;
-        background-size: 100%;
-        width: 100vh;
-        height: 100vh;
-        left: 14%;
-        top: -20%;
-        z-index: 1;
-        // border: 1px solid salmon;
-    }
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     background-image: url(/icons/circular_shadow.svg);
+    //     background-repeat: no-repeat;
+    //     // background-position: 21vh -23vh;
+    //     // background-position: 15vw -14vw;
+    //     // background-position: 10vw 20vw;
+    //     background-size: 100%;
+    //     width: 100vh;
+    //     height: 100vh;
+    //     left: 14%;
+    //     top: -20%;
+    //     z-index: 0;
+    //     user-select: none;
+    //     // border: 1px solid salmon;
+    // }
 }
 
 h1 {
@@ -75,7 +78,8 @@ h1 {
 }
 
 h2 {
-    font-size: 4.5vh;
+    // font-size: 4.5vh;
+    font-size: 3vw;
     font-weight: 400;
     margin-bottom: 1.2em;
     color: teal;

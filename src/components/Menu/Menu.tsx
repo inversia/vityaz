@@ -5,16 +5,16 @@ import './Menu.scss'
 import { useAppContext } from '~App/Context'
 
 export function Menu() {
-    const { isResearchPage } = useAppContext()
+    const { isTransparent } = useAppContext()
 
     return (
         <>
-            <div className={cls('menu-wrapper', { opaque: isResearchPage })}>
+            <div className={cls('menu-wrapper', { transparent: isTransparent })}>
                 <ul>
                     <MenuLink path="/about">About</MenuLink>
                     <MenuLink path="/contacts">Contacts</MenuLink>
                     <MenuLink path="/research">Research / AI</MenuLink>
-                    <MenuLink path="/art">Visual Art</MenuLink>
+                    <MenuLink path="/visual">Visual Art</MenuLink>
                     <MenuLink path="/music">Music</MenuLink>
                     <MenuLink path="/main">Main</MenuLink>
                 </ul>

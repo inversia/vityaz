@@ -1,0 +1,77 @@
+.page-visual-art-wrapper {
+    padding: var(--page-padding);
+    --grid-padding: 1.5vh;
+
+    // .chaotic-pic {
+    //     // width: 100%;
+    //     // display: grid;
+    //     // grid-template-columns: 3fr 1fr 1fr;
+    //     // grid-template-rows: 1fr 3fr;
+    //     // grid-column-gap: 10px;
+    //     // grid-row-gap: 10px;
+    //     // min-height: 50vh;
+
+    //     & > div {
+    //         margin: var(--grid-padding) 0vh;
+    //     }
+
+    //     .block1 {
+    //         width: 100%;
+    //         display: grid;
+    //         grid-template-columns: 3fr 2fr 4fr;
+    //         grid-column-gap: var(--grid-padding);
+    //         grid-row-gap: var(--grid-padding);
+    //         // min-height: 40vh;
+
+    //         & > div {
+    //             border: 2px solid lightpink;
+    //             height: 20vh;
+    //         }
+    //     }
+
+    //     .block2 {
+    //         width: 100%;
+    //         display: grid;
+    //         grid-template-columns: 2fr 3fr 1fr;
+    //         grid-column-gap: var(--grid-padding);
+    //         grid-row-gap: var(--grid-padding);
+    //         // min-height: 50vh;
+    //         // margin-bottom: 10px;
+
+    //         & > div {
+    //             border: 2px solid lightpink;
+    //             height: 40vh;
+    //         }
+
+    //         & .a2 {
+    //             width: 100%;
+    //             display: grid;
+    //             grid-template-columns: 1fr 1fr;
+    //             grid-template-rows: 1fr 1fr;
+
+    //             grid-column-gap: var(--grid-padding);
+    //             grid-row-gap: var(--grid-padding);
+
+    //             > div {
+    //                 border: 2px solid rgb(166, 255, 243);
+    //             }
+    //         }
+    //     }
+
+    //     .block3 {
+    //         width: 100%;
+    //         display: grid;
+    //         grid-template-columns: 3fr 1fr;
+    //         // grid-template-rows: 16fr 8fr;
+    //         grid-column-gap: var(--grid-padding);
+    //         grid-row-gap: var(--grid-padding);
+    //         // min-height: 50vh;
+    //         // margin-bottom: 10px;
+
+    //         & > div {
+    //             border: 2px solid lightpink;
+    //             height: 43vh;
+    //         }
+    //     }
+    // }
+}

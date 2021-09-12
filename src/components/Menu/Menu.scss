@@ -6,13 +6,15 @@
     top: 0;
     left: -1.9vh;
     background-image: url(./images/menu_transparent.svg);
+    background-image: url(~icons/menu.svg);
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
 
-    &.opaque {
+    &.transparent {
         background-image: url(~icons/menu.svg);
+        background-image: url(./images/menu_transparent.svg);
     }
 
     ul {
