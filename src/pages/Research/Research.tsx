@@ -1,6 +1,8 @@
 import React from 'react'
-import { useAppContext } from '~App/Context'
+// import { useAppContext } from '~App/Context'
+import { InfoBlock } from '~components'
 import './Research.scss'
+import { aipepople, graduallyImprove } from './images'
 
 export function Research() {
     return (
@@ -32,6 +34,10 @@ export function Research() {
                 Closing the Sim-to-Real Loop: Adapting Simulation Randomization with Real World
                 Experience
             </h2>
+            <InfoBlock
+                text="Using NVIDIA Flex, a GPU-based physics engine, we show promising speed-ups of learning various continuous-control, locomotion tasks. With one GPU and CPU core, we are able to train the Humanoid running task in less than 20 minutes, using 10-1000x fewer CPU cores than previous works. We also demonstrate the scalability of our simulator to multi-GPU settings to train for more challenging locomotion tasks."
+                image={graduallyImprove}
+            />
         </div>
     )
 }

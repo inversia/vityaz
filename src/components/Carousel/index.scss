@@ -1,0 +1,96 @@
+.carousel {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    .carousel-scroller {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        align-content: stretch;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .carousel-item {
+            display: flex;
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+
+            & > * {
+                flex: 1;
+                margin-right: 0.1vw;
+            }
+        }
+    }
+
+    .carousel-pagination-wrapper {
+        display: flex;
+        flex-direction: row;
+
+        position: relative;
+        align-items: center;
+        width: 26em;
+        top: 1.32em;
+
+        .right-button,
+        .left-button {
+            background-repeat: no-repeat;
+            background-size: 99%;
+            background-image: url(~icons/arrowDown.svg);
+
+            border: none;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0);
+            height: 2em;
+            width: 2em;
+            cursor: pointer;
+        }
+
+        .left-button {
+            transform: rotate(90deg);
+            background-position: left;
+        }
+
+        .right-button {
+            transform: rotate(-90deg);
+            background-position: right;
+        }
+
+        .carousel-pagination {
+            position: relative;
+            display: flex;
+            height: 0.24em;
+            left: 0;
+            bottom: 0;
+            overflow: hidden;
+            padding: 0em 1.2em;
+            width: 100%;
+
+            .carousel-page-btn {
+                width: 8em;
+                background-color: #ecf6ff;
+                transition: background-color 0.35s ease-in-out;
+                cursor: pointer;
+                position: relative;
+
+                &:hover {
+                    background-color: var(--hover-active);
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &.active {
+                    background-color: var(--turquoise);
+                }
+            }
+        }
+    }
+}
