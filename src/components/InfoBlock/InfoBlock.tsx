@@ -5,18 +5,18 @@ import './InfoBlock.scss'
 export function InfoBlock({
     text,
     image,
-    textAtLeft,
+    textAtRight,
     isVertical
 }: {
     text: string
     image?: string
-    textAtLeft?: boolean | undefined
+    textAtRight?: boolean | undefined
     isVertical?: boolean | undefined
 }) {
     return (
         <div
             className={cls('info-block-wrapper', {
-                'text-left': textAtLeft,
+                'text-right': textAtRight,
                 vertical: isVertical
             })}
         >
