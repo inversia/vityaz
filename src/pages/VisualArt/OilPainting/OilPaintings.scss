@@ -6,6 +6,7 @@
     // grid-column-gap: 10px;
     // grid-row-gap: 10px;
     // min-height: 50vh;
+    margin-bottom: 10vh;
 
     & > div {
         margin: var(--grid-padding) 0vh;
@@ -19,8 +20,9 @@
         grid-row-gap: var(--grid-padding);
         // min-height: 40vh;
 
-        & > div {
-            border: 2px solid lightpink;
+        & > div,
+        & > * {
+            // border: 2px solid lightpink;
             height: 20vh;
             background-size: cover;
             background-repeat: no-repeat;
@@ -39,9 +41,13 @@
         // min-height: 50vh;
         // margin-bottom: 10px;
 
-        & > div {
-            border: 2px solid lightpink;
+        & > div,
+        & > * {
+            // border: 2px solid lightpink;
             height: 40vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         & .a2 {
@@ -54,7 +60,10 @@
             grid-row-gap: var(--grid-padding);
 
             > div {
-                border: 2px solid rgb(166, 255, 243);
+                // border: 2px solid rgb(166, 255, 243);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
             }
         }
     }
@@ -69,9 +78,13 @@
         // min-height: 50vh;
         // margin-bottom: 10px;
 
-        & > div {
-            border: 2px solid lightpink;
+        & > div,
+        & > * {
+            // border: 2px solid lightpink;
             height: 43vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
     }
 }

@@ -4,7 +4,7 @@ import './PlanetaryMenu.scss'
 export function PlanetaryMenu() {
     return (
         <div className="planetary-menu">
-            <a className="art-planet">
+            <a href="/visual" className="art-planet">
                 <span>Visual Art</span>
             </a>
             <a className="logo">

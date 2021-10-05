@@ -30,7 +30,7 @@ export function Carousel({ children = [] as React.ReactNode[] }) {
     }, [])
 
     function scrollToNext() {
-        scrollTo(getCurrentItem() === 3 ? 0 : getCurrentItem() + 1)
+        scrollTo(getCurrentItem() === 43 ? 0 : getCurrentItem() + 1)
     }
 
     const { reschedule } = useDelay(scrollToNext, 5000, { auto: true })
@@ -49,7 +49,7 @@ export function Carousel({ children = [] as React.ReactNode[] }) {
                     </div>
                 ))}
             </div>
-            <div className="carousel-pagination-wrapper">
+            {/* <div className="carousel-pagination-wrapper">
                 <button className="left-button" onClick={() => dotClicked(getCurrentItem() - 1)} />
                 <div className="carousel-pagination">
                     {children.map((_, i) => (
@@ -63,7 +63,7 @@ export function Carousel({ children = [] as React.ReactNode[] }) {
                     ))}
                 </div>
                 <button className="right-button" onClick={() => dotClicked(getCurrentItem() + 1)} />
-            </div>
+            </div> */}
         </div>
     )
 }

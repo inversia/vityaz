@@ -7,7 +7,31 @@ import * as _rectImages from './images'
 const squareImages = shuffle(Object.values(_squareImages)) as string[]
 const rectImages = shuffle(Object.values(_rectImages)) as string[]
 
-const isSquare = [true, false, true, true, true, false, false]
+const isSquare = [
+    true,
+    false,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+    false,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
+    false
+]
 
 const images = isSquare.map(yes => {
     return yes ? squareImages.pop() : rectImages.pop()
@@ -26,36 +50,86 @@ export function OilPaintings() {
                         One
                     </div>
 
-                    <div>Two</div>
-                    <div>Three</div>
+                    <div
+                        style={{
+                            backgroundImage: `url(${images[1]!})`
+                        }}
+                    >
+                        Two
+                    </div>
+                    <div
+                        style={{
+                            backgroundImage: `url(${images[2]!})`
+                        }}
+                    >
+                        Three
+                    </div>
                 </div>
 
                 <div className="block2">
                     <div className="a2">
-                        <div></div>
                         <div
                             style={{
-                                backgroundImage: `url(${images[1]!})`
+                                backgroundImage: `url(${images[3]!})`
                             }}
                         ></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div>
-                        Two
                         <div
                             style={{
-                                backgroundImage: `url(${images[2]!})`
+                                backgroundImage: `url(${images[4]!})`
                             }}
                         ></div>
-                        <div></div>
+                        <div
+                            style={{
+                                backgroundImage: `url(${images[5]!})`
+                            }}
+                        ></div>
+                        <div
+                            style={{
+                                backgroundImage: `url(${images[6]!})`
+                            }}
+                        ></div>
                     </div>
-                    <div>Three</div>
+                    <div
+                        style={{
+                            backgroundImage: `url(${images[7]!})`
+                        }}
+                    >
+                        GOGOGOG
+                        <div
+                            style={{
+                                backgroundImage: `url(${images[8]!})`
+                            }}
+                        ></div>
+                        <div
+                            style={{
+                                backgroundImage: `url(${images[9]!})`
+                            }}
+                        ></div>
+                    </div>
+                    <div
+                        style={{
+                            backgroundImage: `url(${images[10]!})`
+                        }}
+                    >
+                        Five
+                    </div>
                 </div>
 
                 <div className="block3">
-                    <div>One</div>
-                    <div>Two</div>
+                    <div
+                        style={{
+                            backgroundImage: `url(${images[11]!})`
+                        }}
+                    >
+                        Six
+                    </div>
+                    <div
+                        style={{
+                            backgroundImage: `url(${images[12]!})`
+                        }}
+                    >
+                        Seven
+                    </div>
                 </div>
             </div>
         </>

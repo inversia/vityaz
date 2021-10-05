@@ -1,6 +1,11 @@
 declare module '*.svg'
 declare module '*.svgr'
 declare module '*.jpg'
+declare module '*.mp3' {
+    const files: Record<string, string>
+    export = files
+}
+declare module '*.jpeg'
 declare module '*.json'
 declare module '*.(jpg|png|svg)'
 
@@ -9,11 +14,11 @@ type Entries<T> = {
 }[keyof T][]
 
 interface String {
-    startsWith(s: string): boolean;
+    startsWith(s: string): boolean
 }
 
 interface Array<T> {
-    find(fn: (item: T, index: number) => boolean): T;
+    find(fn: (item: T, index: number) => boolean): T
 }
 
 // interface Set<T> {

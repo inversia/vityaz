@@ -4,7 +4,7 @@
     position: fixed;
     z-index: 3;
     top: 0;
-    left: -1.9vh;
+    left: -2.1vh;
     background-image: url(./images/menu_transparent.svg);
     background-image: url(~icons/menu.svg);
     background-position: left;
@@ -15,6 +15,8 @@
     &.transparent {
         background-image: url(~icons/menu.svg);
         background-image: url(./images/menu_transparent.svg);
+        position: fixed;
+        z-index: 3;
     }
 
     ul {
@@ -24,7 +26,8 @@
         padding: 2em 3.3em;
         font-size: 1.5vh;
         position: relative;
-        z-index: 16;
+        // z-index: 16;
+        z-index: 3;
         transition: color 0.3s ease-in-out;
         // border: 1px solid springgreen;
 
