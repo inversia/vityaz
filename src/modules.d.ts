@@ -2,8 +2,8 @@ declare module '*.svg'
 declare module '*.svgr'
 declare module '*.jpg'
 declare module '*.mp3' {
-    const files: Record<string, string>
-    export = files
+    const file: string
+    export = file
 }
 declare module '*.jpeg'
 declare module '*.json'

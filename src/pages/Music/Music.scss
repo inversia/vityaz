@@ -1,0 +1,14 @@
+.music-wrapper {
+    padding: var(--page-padding);
+
+    .video-container {
+        border: 5px solid aquamarine;
+        transform: scale(1.26);
+        min-height: 23vw;
+        margin-top: 5vw;
+        margin-bottom: 7vw;
+        width: 100%;
+        height: 30vw;
+        background-color: #ffc4fa;
+    }
+}
