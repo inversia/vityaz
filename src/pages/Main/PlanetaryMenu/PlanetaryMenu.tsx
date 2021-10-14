@@ -1,5 +1,6 @@
 import React from 'react'
 import './PlanetaryMenu.scss'
+import { NoteGenerator } from './NoteGenerator'
 
 export function PlanetaryMenu() {
     return (
@@ -14,9 +15,11 @@ export function PlanetaryMenu() {
                 <span>Research / AI</span>
             </a>
 
-            <a className="music-planet">
+            <a href="/music" className="music-planet">
                 <span>Music</span>
             </a>
+
+            <NoteGenerator />
         </div>
     )
 }

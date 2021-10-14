@@ -84,13 +84,14 @@ export function AudioTrack({ song }: { song: Song }) {
                         <source src={song.url}></source>
                     </audio>
                 </button>
-                <div
-                    className="progress-bar"
-                    ref={progressBar}
-                    onMouseDown={e => showSliderPosition(e)}
-                    // onTouchStart={e => showSliderPosition(e)}
-                >
-                    <div className="slider" style={{ left: `${progressPercentage}%` }}></div>
+                <div className="progress-bar-wrapper">
+                    <div
+                        className="progress-bar"
+                        ref={progressBar}
+                        onMouseDown={e => showSliderPosition(e)}
+                        // onTouchStart={e => showSliderPosition(e)}
+                    ></div>
+                    <div className="slider" style={{ left: `${progressPercentage + 2}%` }} />
                 </div>
             </div>
         </div>
