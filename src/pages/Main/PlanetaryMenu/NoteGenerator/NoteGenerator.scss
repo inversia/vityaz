@@ -1,10 +1,15 @@
 .note-gen-wrapper {
-    width: 50vw;
+    width: 55vw;
     height: 50vh;
     position: absolute;
     bottom: 0;
     right: 0%;
     z-index: 1;
+    // border: 1px solid aquamarine;
+    background-image: url(../images/notes.svg);
+    background-size: 131% 173%;
+    background-repeat: no-repeat;
+    background-position: 23% -15%;
 
     .notes-container {
         // height: 10vw;
@@ -12,6 +17,10 @@
         width: 100%;
         position: relative;
         display: block;
+        // background-image: url(../images/notes.svg);
+        // background-size: 100% 180%;
+        // background-repeat: no-repeat;
+        // background-position: 10% 0%;
 
         .note {
             position: absolute;
@@ -27,7 +36,7 @@
                 display: block;
                 animation: pulse-alert 1s ease-in-out;
                 opacity: var(--note-opacity);
-                // animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
             }
         }
     }

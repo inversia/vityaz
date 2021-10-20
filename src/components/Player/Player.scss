@@ -1,5 +1,4 @@
 .player-background {
-    // border: rgb(0, 255, 200) 2px solid;
     position: fixed;
     height: 45vh;
     width: 45vh;
@@ -7,15 +6,22 @@
     background-image: url(./images/player_background.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    // z-index: 3;
     bottom: 0;
     right: 0;
     pointer-events: none;
+    z-index: 5;
 }
 
 .play-button-container {
     position: relative;
     z-index: 6;
+
+    &.is-playing {
+        .record-two {
+            animation: record-moving backwards 2s linear infinite;
+        }
+    }
+
     .record-one,
     .record-two {
         height: 8vh;
@@ -29,9 +35,72 @@
         right: 6vh;
         z-index: 4;
         cursor: pointer;
-        // background-color: rgb(238, 255, 0);
+    }
+
+    .record-two {
+        background-image: url(./images/pure_record.svg) !important;
     }
 }
 
-.record-two {
+// @keyframes record-moving {
+//     0% {
+//         transform: translate(0px, 0px);
+//         // opacity: 0;
+//     }
+//     25% {
+//         transform: translate(1px, 1px);
+//     }
+//     50% {
+//         transform: translate(0px, 2px);
+//         // opacity: 1;
+//     }
+//     75% {
+//         transform: translate(-1px, 1px);
+//     }
+//     100% {
+//         transform: translate(0px, 0px);
+//         // opacity: 0;
+//     }
+// }
+
+// @keyframes record-moving {
+//     0% {
+//         transform: translate(0px, 0px);
+//         // opacity: 0;
+//     }
+//     25% {
+//         transform: translate(2px, 1px);
+//     }
+//     50% {
+//         transform: translate(0px, 2px);
+//         // opacity: 1;
+//     }
+//     75% {
+//         transform: translate(-2px, -1px);
+//     }
+//     100% {
+//         transform: translate(0px, 0px);
+//         // opacity: 0;
+//     }
+// }
+
+@keyframes record-moving {
+    0% {
+        transform: translate(0px, 0px);
+        // opacity: 0;
+    }
+    25% {
+        transform: translate(1px, 1px);
+    }
+    50% {
+        transform: translate(0px, 1px);
+        // opacity: 1;
+    }
+    75% {
+        transform: translate(-1px, 1px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+        // opacity: 0;
+    }
 }

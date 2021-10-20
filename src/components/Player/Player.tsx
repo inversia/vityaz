@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
+import cls from 'classnames'
 import './Player.scss'
 import mp3files from './music/*.mp3'
 
@@ -48,11 +49,11 @@ export function Player() {
 
     return (
         <>
-            <div className="player-background">
-                {/* <div className="record-one"></div>
-                <div className="record-two"></div> */}
-            </div>
-            <div className="play-button-container" onClick={PlaySong}>
+            <div className="player-background"></div>
+            <div
+                className={cls('play-button-container', { 'is-playing': isPlaying })}
+                onClick={PlaySong}
+            >
                 <audio
                     ref={playerRef}
                     onPlaying={() => setIsPlaying(true)}
