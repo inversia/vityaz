@@ -8,6 +8,10 @@ declare module '*.mp3' {
 declare module '*.jpeg'
 declare module '*.json'
 declare module '*.(jpg|png|svg)'
+declare module '*.png' {
+    const file: string
+    export = file
+}
 
 type Entries<T> = {
     [K in keyof T]: [K, T[K]]

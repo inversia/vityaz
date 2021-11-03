@@ -5,7 +5,7 @@ import 'panic-overlay' // TODO: disable in production (conditional import?)
 import { ProvideAppContext } from './Context'
 // import { facebook } from '~icons'
 
-import { Main, Research, VisualArt, Music } from '~pages/'
+import { Main, Research, VisualArt, Music, Contacts } from '~pages/'
 import { Menu, Player } from '~components/'
 
 export function App() {
@@ -27,6 +27,7 @@ function AppContent() {
                 <Route path="/research" exact component={Research} />
                 <Route path="/visual" exact component={VisualArt} />
                 <Route path="/music" exact component={Music} />
+                <Route path="/contacts" exact component={Contacts} />
             </div>
             <Player />
         </>

@@ -6,10 +6,16 @@
     right: 0%;
     z-index: 1;
     // border: 1px solid aquamarine;
-    background-image: url(../images/notes.svg);
-    background-size: 131% 173%;
-    background-repeat: no-repeat;
-    background-position: 23% -15%;
+    // background-color: rgb(255, 0, 0);
+    // background: linear-gradient(orange, rgb(20, 120, 128), rgb(255, 180, 42));
+    // // background-image: url(../images/notes.svg);
+    // // background-size: 131% 173%;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // mask-image: url(../images/notes.svg);
+    // mask-repeat: no-repeat;
+    // mask-size: cover;
+    // background-position: 23% -15%;
 
     .notes-container {
         // height: 10vw;
@@ -17,6 +23,9 @@
         width: 100%;
         position: relative;
         display: block;
+        // mask-image: url(../images/notes.svg);
+        // mask-repeat: no-repeat;
+        // mask-size: cover;
         // background-image: url(../images/notes.svg);
         // background-size: 100% 180%;
         // background-repeat: no-repeat;
