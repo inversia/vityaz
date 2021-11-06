@@ -26,20 +26,27 @@
 
         width: 50vw;
         height: 50vw;
-        right: -10%;
-        bottom: -70%;
-        background-color: violet;
-        mask-image: url(../images/circle_notes.svg);
-        // mask-image: url(../images/notes.svg);
+        // right: -10%;
+        // bottom: -70%;
+        right: -6%;
+        bottom: -62%;
+        // background-color: violet;
+        background-color: rgb(212, 212, 212);
+        // mask-image: url(../images/circle_notes.svg);
+        mask-image: url(../images/notes.svg);
         mask-repeat: no-repeat;
-        mask-size: 80%;
+        // mask-size: 80%;
+        // mask-size: 124%;
+        mask-size: 92vh;
         // border-radius: 100vw;
-        mask-position: center center;
+        // mask-position: center center;
+        mask-position: right bottom;
         z-index: 1;
+
         // background-position: center;
         // transform-origin: center center;
-        animation: rotate 35s linear infinite;
-        animation-fill-mode: forwards;
+        // animation: rotate 35s linear infinite;
+        // animation-fill-mode: forwards;
     }
 }
 

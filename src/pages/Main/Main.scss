@@ -37,7 +37,7 @@
             display: flex;
             flex-direction: row;
             position: relative;
-            // z-index: 5 !important;
+            // z-index: 12 !important;
 
             .research-and-music {
                 display: flex;
@@ -48,19 +48,19 @@
 
         .fluid-container {
             // border: 1px solid black;
-            width: 55vw;
-            height: 68vh;
+            width: 93vh;
+            height: 75vh;
             // transform: rotate(32deg);
             transform: rotate(42deg);
-            border-radius: var(--fluid-border-radius);
+            // border-radius: var(--fluid-border-radius);
+            border-radius: 100%;
             z-index: 5;
-            // bottom: -18vw;
-            // left: -17vh;
-            bottom: -13vw;
-            // left: -26vh;
-            left: -18vh;
+
+            bottom: -19vh;
+            left: -19vh;
             position: absolute;
-            box-shadow: 0vw 0vw 0.9vw 0.5vw rgb(255, 255, 255);
+            // box-shadow: 0vw 0vw 0.9vw 0.5vw rgb(255, 255, 255);
+            box-shadow: 0vw 0vw 0.9vh 0.5vh rgb(255, 255, 255);
 
             &::after {
                 content: '';
@@ -70,9 +70,14 @@
                 top: 0;
                 height: 100%;
                 width: 100%;
-                border-radius: var(--fluid-border-radius);
+                // border-radius: var(--fluid-border-radius);
+                border-radius: 100%;
                 pointer-events: none;
-                box-shadow: inset 0vw 0vw 3.8vw 4.5vw rgb(255, 255, 255);
+                // box-shadow: inset 0vw 0vw 3.8vw 4.5vw rgb(255, 255, 255),
+                //     -2px -3px rgb(255, 255, 255);
+                box-shadow: inset 0vw 0vw 3.8vh 4.5vh rgb(255, 255, 255),
+                    -2px -3px rgb(255, 255, 255);
+                opacity: 1;
             }
 
             .fluid-background {
@@ -90,6 +95,7 @@
                 height: 100%;
                 width: 100%;
                 border-radius: var(--fluid-border-radius);
+                border-radius: 100%;
                 // transform: scale(0.99);
             }
         }

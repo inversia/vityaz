@@ -10,6 +10,7 @@ export function Menu() {
     return (
         <>
             <div className={cls('menu-wrapper', { transparent: isTransparent })}>
+                <div className="menu-background"></div>
                 <ul>
                     <MenuLink path="/about">About</MenuLink>
                     <MenuLink path="/contacts">Contacts</MenuLink>

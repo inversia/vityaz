@@ -1,0 +1,28 @@
+.planet-wrapper {
+    position: absolute;
+    border: 1px solid slategrey;
+    height: 82vh;
+    width: 82vh;
+    border-radius: 100%;
+    top: -20vh;
+    right: 32vw;
+    // background-color: #13434e, #13434e1e;
+    // background: linear-gradient(0.65turn, rgb(207 215 217), #13434e00);
+    background: linear-gradient(0.65turn, rgb(134, 153, 158) 2%, #13434e00);
+    filter: blur(6vw);
+    border: 1px solid slategrey;
+    pointer-events: none;
+    // z-index: 16;
+    z-index: 0;
+
+    .planet {
+        border: 1px solid slategrey;
+        height: 50vh;
+        width: 50vh;
+        border-radius: 100%;
+        // background-color: rgba(64, 224, 208, 0.363);
+        position: absolute;
+        // right: 5vh;
+        // top: -25vh;
+    }
+}

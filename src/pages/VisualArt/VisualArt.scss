@@ -18,3 +18,10 @@
         margin: 10vh 0vh;
     }
 }
+
+@media (max-width: 800px) {
+    .page-visual-art-wrapper {
+        padding: var(--mini-page-padding);
+        --grid-padding: 1.5vh;
+    }
+}

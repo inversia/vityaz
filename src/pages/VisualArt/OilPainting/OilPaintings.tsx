@@ -42,22 +42,25 @@ export function OilPaintings() {
         <>
             <div className="chaotic-pic">
                 <div className="block1">
-                    <div
-                        style={{
-                            backgroundImage: `url(${images[0]!})`
-                        }}
-                    >
-                        One
-                    </div>
+                    <>
+                        <div
+                            style={{
+                                backgroundImage: `url(${images[0]!})`
+                            }}
+                        >
+                            One
+                        </div>
 
+                        <div
+                            style={{
+                                backgroundImage: `url(${images[1]!})`
+                            }}
+                        >
+                            Two
+                        </div>
+                    </>
                     <div
-                        style={{
-                            backgroundImage: `url(${images[1]!})`
-                        }}
-                    >
-                        Two
-                    </div>
-                    <div
+                        className="block1three"
                         style={{
                             backgroundImage: `url(${images[2]!})`
                         }}
@@ -89,30 +92,33 @@ export function OilPaintings() {
                             }}
                         ></div>
                     </div>
-                    <div
-                        style={{
-                            backgroundImage: `url(${images[7]!})`
-                        }}
-                    >
-                        GOGOGOG
+
+                    <>
                         <div
                             style={{
-                                backgroundImage: `url(${images[8]!})`
+                                backgroundImage: `url(${images[7]!})`
                             }}
-                        ></div>
+                        >
+                            GOGOGOG
+                            <div
+                                style={{
+                                    backgroundImage: `url(${images[8]!})`
+                                }}
+                            ></div>
+                            <div
+                                style={{
+                                    backgroundImage: `url(${images[9]!})`
+                                }}
+                            ></div>
+                        </div>
                         <div
                             style={{
-                                backgroundImage: `url(${images[9]!})`
+                                backgroundImage: `url(${images[10]!})`
                             }}
-                        ></div>
-                    </div>
-                    <div
-                        style={{
-                            backgroundImage: `url(${images[10]!})`
-                        }}
-                    >
-                        Five
-                    </div>
+                        >
+                            Five
+                        </div>
+                    </>
                 </div>
 
                 <div className="block3">

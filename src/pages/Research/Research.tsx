@@ -1,6 +1,6 @@
 import React from 'react'
 // import { useAppContext } from '~App/Context'
-import { InfoBlock } from '~components'
+import { InfoBlock, Planet } from '~components'
 import './Research.scss'
 import { aipepople, graduallyImprove } from './images'
 
@@ -8,6 +8,7 @@ export function Research() {
     return (
         <div className="page-research">
             {/* <div className="menu-plug"></div> */}
+            <Planet />
             <h1>Research / AI</h1>
             <h2>
                 GPU-Accelerated Robotics Simulation for <br></br>Distributed Reinforcement Learning
