@@ -15,7 +15,8 @@ export function VisualArt() {
 
             <h2>These are my graphic sketches! Pheheh!</h2>
             <Sketches />
-            <h2>Oh, and is my sculpture works!</h2>
+            <div className="mountains"></div>
+            <h2 className="sculpture-h2">Oh, and is my sculpture works!</h2>
             <Sculptures />
         </div>
     )

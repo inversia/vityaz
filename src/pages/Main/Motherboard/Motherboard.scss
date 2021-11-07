@@ -1,0 +1,19 @@
+.motherboard-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    .motherboard {
+        position: absolute;
+        right: -16vw;
+        top: -4vw;
+        height: 62vh;
+        width: 97vh;
+        background-image: url(~icons/motherboard.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 105%;
+        z-index: -1;
+        opacity: 0.2;
+    }
+}

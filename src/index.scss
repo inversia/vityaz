@@ -70,7 +70,7 @@ body {
 h1 {
     font-size: 5.3vw;
     font-weight: 500;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     // color: transparentize($color: #3b2275, $amount: 0);
     position: relative;
     background: -webkit-linear-gradient(to bottom, #000000 0%, #386ca8 90%);
@@ -81,10 +81,10 @@ h1 {
 }
 
 h2 {
-    // font-size: 4.5vh;
     font-size: 3vw;
     font-weight: 400;
-    margin-bottom: 1.2em;
+    // margin-bottom: 1.2em;
+    margin-bottom: 0.8em;
     color: teal;
     line-height: 1.25em;
 

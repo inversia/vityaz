@@ -1,28 +1,35 @@
 .planet-wrapper {
     position: absolute;
-    border: 1px solid slategrey;
-    height: 82vh;
-    width: 82vh;
-    border-radius: 100%;
-    top: -20vh;
-    right: 32vw;
-    // background-color: #13434e, #13434e1e;
-    // background: linear-gradient(0.65turn, rgb(207 215 217), #13434e00);
-    background: linear-gradient(0.65turn, rgb(134, 153, 158) 2%, #13434e00);
-    filter: blur(6vw);
-    border: 1px solid slategrey;
+    // height: 82vh;
+    // width: 82vh;
+    height: 100vh;
+    width: 100vw;
     pointer-events: none;
-    // z-index: 16;
-    z-index: 0;
+
+    .planet-blur {
+        position: absolute;
+        height: 55vw;
+        width: 55vw;
+        border-radius: 100%;
+        top: -40vw;
+        right: 35vw;
+        background: linear-gradient(0.65turn, rgb(134, 153, 158) 2%, #13434e00);
+        filter: blur(6vw);
+        z-index: 0;
+    }
 
     .planet {
-        border: 1px solid slategrey;
-        height: 50vh;
-        width: 50vh;
+        border: 1px solid rgb(255, 255, 255);
+        height: 32vw;
+        width: 32vw;
         border-radius: 100%;
-        // background-color: rgba(64, 224, 208, 0.363);
         position: absolute;
-        // right: 5vh;
-        // top: -25vh;
+        filter: blur(0vw);
+        left: 33%;
+        top: -35vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-shadow: inset 0vw 0vw 1.9vw 3vw white;
     }
 }

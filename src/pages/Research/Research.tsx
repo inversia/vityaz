@@ -8,7 +8,7 @@ export function Research() {
     return (
         <div className="page-research">
             {/* <div className="menu-plug"></div> */}
-            <Planet />
+            <Planet img={aipepople} />
             <h1>Research / AI</h1>
             <h2>
                 GPU-Accelerated Robotics Simulation for <br></br>Distributed Reinforcement Learning
