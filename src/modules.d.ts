@@ -12,6 +12,10 @@ declare module '*.png' {
     const file: string
     export = file
 }
+// declare module '*.svg' {
+//     const file: string
+//     export = file
+// }
 
 type Entries<T> = {
     [K in keyof T]: [K, T[K]]

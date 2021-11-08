@@ -2,6 +2,8 @@ import React from 'react'
 import { AudioTrack } from './AudioTrack'
 import './Music.scss'
 import { mantra } from './audiofiles'
+import { Planet } from '~components'
+import { circle_notes } from '~icons'
 
 type Songs = {
     name: string
@@ -12,6 +14,7 @@ const songs: Songs = [{ name: 'MANTRA', url: mantra }]
 export function Music() {
     return (
         <div className="music-wrapper">
+            <Planet img={circle_notes as string} isInk={false} />
             <h1>Music</h1>
             <h2>Piano concert in Great Music Hall 26/02/20</h2>
             <p>

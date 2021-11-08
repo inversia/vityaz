@@ -50,7 +50,7 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .info-block-wrapper {
         flex-direction: column;
         box-shadow: 0.1vh 0.1vh 3vh rgba(128, 128, 128, 0.397);
@@ -69,8 +69,8 @@
 
         .info-wrapper {
             flex: 1;
-            padding: 5vh;
-            font-size: 1.8vh;
+            padding: 8vh;
+            font-size: 2.8vh;
             line-height: 1.5em;
             font-weight: 100;
 

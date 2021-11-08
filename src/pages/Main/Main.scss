@@ -19,16 +19,18 @@
         --fluid-border-radius: 50% 20% 70% 50% / 30% 20% 130% 70%;
 
         .background-planet {
-            background-image: url(~/icons/research_planet.png);
+            background-image: url(~/icons/motherboard_transparent.svg);
             background-repeat: no-repeat;
-            height: 40vw;
-            width: 38vw;
+            height: 33vw;
+            width: 33vw;
             background-size: contain;
             background-position: center;
-            left: 22vw;
-            top: -26vw;
+            left: 17vw;
+            top: -23vw;
             position: absolute;
             z-index: 10;
+            border-radius: 100%;
+            box-shadow: inset 0vw 0vw 4.2vh 7.5vh rgb(255, 255, 255), -2px -3px rgb(255, 255, 255);
         }
 
         .planetary-menu {
@@ -55,7 +57,6 @@
             // border-radius: var(--fluid-border-radius);
             border-radius: 100%;
             z-index: 5;
-
             bottom: -19vh;
             left: -19vh;
             position: absolute;

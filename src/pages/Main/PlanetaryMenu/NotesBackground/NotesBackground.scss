@@ -37,36 +37,3 @@
         z-index: 1;
     }
 }
-
-// animation: rotate 35s linear infinite;
-// animation-fill-mode: forwards;
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-        background-color: rgb(255, 227, 255);
-        // mask-size: 70%;
-    }
-
-    25% {
-        background-color: rgb(187, 197, 255);
-        // mask-size: 70%;
-    }
-
-    50% {
-        background-color: rgb(130, 238, 215);
-        // mask-size: 100%;
-    }
-
-    75% {
-        background-color: rgb(238, 209, 130);
-        // mask-size: 85%;
-    }
-
-    100% {
-        transform: rotate(360deg);
-        // opacity: 0;
-        background-color: rgb(255, 227, 255);
-        // mask-size: 70%;
-    }
-}

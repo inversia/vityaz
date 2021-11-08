@@ -71,12 +71,14 @@
                     // color: rgb(161, 127, 255);
                     position: relative;
                     color: #e78c15;
+                    color: #cff605;
+
                     white-space: nowrap;
                     // content: attr(data-descr);
                     content: attr(data-descr);
                     font-size: 1em;
                     position: absolute;
-                    left: 0.09em;
+                    left: 0.13em;
                     top: 0em;
                     z-index: 11;
                     // text-shadow: rgb(6, 255, 193) 0.01em 0.01em;

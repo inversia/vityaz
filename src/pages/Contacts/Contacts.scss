@@ -2,96 +2,68 @@
     height: 100vh;
     padding: var(--page-padding);
     padding-top: 0vw;
-    // background-color: pink;
     overflow: hidden;
     position: relative;
-    // background-color: rgb(255, 203, 203);
-
-    .planet {
-    }
-
-    .contacts {
-        top: 0;
-        position: relative;
-        height: 20vw;
-        display: flex;
-        justify-content: flex-end;
-
-        dl {
-            margin-top: 5vh;
-            dt {
-                font-size: 1.7vh;
-                display: flex;
-                flex-direction: row;
-                color: #0c8476;
-                margin-bottom: 1em;
-
-                dd {
-                    font-size: inherit;
-                    color: #50568c;
-                    margin-left: 0.5em;
-                }
-            }
-        }
-    }
+    min-width: 635px;
 
     .media-contacts {
         display: flex;
-        // width: 70vw;
         width: 110vh;
         height: 100vh;
-        // border: 1px solid rgb(255, 201, 201);
-        // margin: -13vw auto;
-        margin: -17vw auto;
+        margin: 4vw auto;
         background-image: url(./images/contacts.svg);
+        background-size: 100%;
         background-size: 90%;
         background-repeat: no-repeat;
         background-position: center;
         position: relative;
         z-index: 12;
+        // border: 1px solid magenta;
 
         a {
             display: block;
             height: 20vh;
             width: 20vh;
             border-radius: 100%;
-            background-color: rgba(231, 214, 214, 0.336);
             cursor: pointer;
             position: absolute;
-            box-shadow: rgb(255, 255, 255) -0em -1em 2em 0.1em;
+            // box-shadow: rgb(255, 255, 255) -0em -1em 2em 0.1em;
         }
 
-        .twitter {
-            left: 13.2%;
+        .github {
+            left: 12.5%;
             top: 19.2%;
-            background-color: rgba(166, 249, 255, 0.336);
-            background: linear-gradient(#daf4ff, #f9f0fd);
+            // border: 1px solid rgb(255, 0, 0);
+            // background-color: rgba(166, 249, 255, 0.336);
+            // background: linear-gradient(#daf4ff, #f9f0fd);
             // background: linear-gradient(#def8ef, #c1c0ca);
         }
 
         .mail {
-            left: 33%;
-            top: 61%;
-            background-color: rgba(121, 141, 255, 0.336);
-            background: linear-gradient(#def8ef, #c1c0ca);
-            transform: rotate(194deg);
+            left: 31.5%;
+            top: 60%;
+            // background-color: rgba(121, 141, 255, 0.336);
+            // background: linear-gradient(#def8ef, #c1c0ca);
+            // transform: rotate(194deg);
+            // border: 1px solid rgb(136, 255, 0);
+        }
+
+        .twitter {
+            left: 52%;
+            top: 28%;
+            // background-color: rgba(255, 121, 255, 0.336);
+            // background: linear-gradient(#c8ffff, #c1c0ca);
+            // border: 1px solid rgb(0, 26, 255);
         }
 
         .facebook {
-            left: 54%;
-            top: 28%;
-            background-color: rgba(255, 121, 255, 0.336);
-            background: linear-gradient(#c8ffff, #c1c0ca);
-        }
-
-        .github {
             height: 10.2vh;
             width: 10.2vh;
-
-            left: 85.65%;
-            top: 21%;
-            background-color: rgba(255, 75, 150, 0.336);
-            background: linear-gradient(#def8ef, #c1c0ca);
+            // border: 1px solid rgb(255, 0, 191);
+            left: 82.8%;
+            top: 20.8%;
+            // background-color: rgba(255, 75, 150, 0.336);
+            // background: linear-gradient(#def8ef, #c1c0ca);
         }
     }
 

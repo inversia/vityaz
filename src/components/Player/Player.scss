@@ -3,7 +3,7 @@
     height: 45vh;
     width: 45vh;
     display: block;
-    background-image: url(./images/player_background.svg);
+    background-image: url(./icons/player_background.svg);
     background-size: cover;
     background-repeat: no-repeat;
     bottom: 0;
@@ -26,7 +26,8 @@
     .record-two {
         height: 8vh;
         width: 8vh;
-        background-image: url(./images/record.svg);
+        background-image: url(./icons/record.svg);
+        // background-image: url(./icons/pure_record.svg) !important;
         background-size: 99%;
         background-repeat: no-repeat;
         display: block;
@@ -38,7 +39,34 @@
     }
 
     .record-two {
-        background-image: url(./images/pure_record.svg) !important;
+        // background-image: url(./icons/pure_record.svg) !important;
+        // transform: rotate(-60deg);
+    }
+
+    .play-button,
+    .pause-button {
+        display: block;
+        bottom: 6.1vh;
+        z-index: 6;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        cursor: pointer;
+        position: fixed;
+    }
+
+    .play-button {
+        background-image: url(~icons/play.svg);
+        width: 2.4vh;
+        height: 2.4vh;
+        right: 8.6vh;
+    }
+
+    .pause-button {
+        background-image: url(~icons/pause.svg);
+        right: 8.9vh;
+        width: 2.3vh;
+        height: 2.3vh;
     }
 }
 

@@ -65,6 +65,8 @@ export function Player() {
                 {/* <h2>{'currentTime ' + playerRef.current?.currentTime}</h2> */}
                 <div className="record-one"></div>
                 <div className="record-two"></div>
+
+                {isPlaying ? <div className="pause-button" /> : <div className="play-button" />}
             </div>
         </>
     )

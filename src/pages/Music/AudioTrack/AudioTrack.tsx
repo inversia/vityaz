@@ -1,4 +1,5 @@
 import React, { useEffect, useCallback, useState, useRef } from 'react'
+import cls from 'classnames'
 import { rescale } from '~common'
 import './AudioTrack.scss'
 
@@ -73,17 +74,19 @@ export function AudioTrack({ song }: { song: Song }) {
                 >
                     <source src={song.url}></source>
                 </audio> */}
+                <audio
+                    ref={songRef}
+                    onPlaying={() => setIsSongPlaying(true)}
+                    onPause={() => setIsSongPlaying(false)}
+                    onTimeUpdate={onTimeUpdated}
+                >
+                    <source src={song.url}></source>
+                </audio>
+                <button
+                    onClick={e => PlaySong(e)}
+                    className={cls(isSongPlaying ? 'playing-song' : 'paused-song')}
+                />
 
-                <button onClick={e => PlaySong(e)}>
-                    <audio
-                        ref={songRef}
-                        onPlaying={() => setIsSongPlaying(true)}
-                        onPause={() => setIsSongPlaying(false)}
-                        onTimeUpdate={onTimeUpdated}
-                    >
-                        <source src={song.url}></source>
-                    </audio>
-                </button>
                 <div className="progress-bar-wrapper">
                     <div
                         className="progress-bar"

@@ -1,14 +1,25 @@
 .music-wrapper {
     padding: var(--page-padding);
 
+    .planet-wrapper {
+        .planet {
+            // transform: rotate(190deg);
+        }
+
+        .inner-halo {
+            z-index: 1;
+            box-shadow: inset 0vw 0vw 4vw 5.2vw rgb(255, 255, 255);
+        }
+    }
+
     .video-container {
-        border: 5px solid aquamarine;
+        // border: 2px solid rgb(155, 127, 255);
         transform: scale(1.26);
         min-height: 23vw;
         margin-top: 5vw;
         margin-bottom: 7vw;
         width: 100%;
         height: 30vw;
-        background-color: #ffc4fa;
+        background: linear-gradient(to right, #aeffed, rgb(200, 200, 255));
     }
 }

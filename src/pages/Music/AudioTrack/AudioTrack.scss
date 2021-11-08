@@ -7,25 +7,47 @@
     }
 
     .audio-track-container {
-        // border: 1px solid aquamarine;
         width: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
         position: relative;
 
-        button {
-            height: 3vw;
-            width: 3vw;
-            margin-right: 1vw;
-            border: none;
-            color: rgb(9, 126, 110);
-            cursor: pointer;
-            background-image: url(~icons/play.svg);
+        // button {
+        //     height: 3vw;
+        //     width: 3vw;
+        //     margin-right: 1vw;
+        //     border: none;
+        //     color: rgb(9, 126, 110);
+        //     cursor: pointer;
+        //     background-image: url(~icons/play.svg);
+        //     background-repeat: no-repeat;
+        //     background-position: left;
+        //     background-color: transparent;
+        //     background-size: contain;
+        // }
+
+        .playing-song,
+        .paused-song {
             background-repeat: no-repeat;
-            background-position: left;
+
             background-color: transparent;
-            // border: 1px solid salmon;
+            background-size: contain;
+            border: none;
+            margin-right: 1vw;
+            width: 3vh;
+            height: 3vh;
+            cursor: pointer;
+        }
+
+        .paused-song {
+            background-image: url(~icons/play.svg);
+            background-position: left;
+        }
+
+        .playing-song {
+            background-image: url(~icons/pause.svg);
+            background-position: center;
         }
 
         .progress-bar-wrapper {
@@ -53,8 +75,8 @@
             }
 
             .slider {
-                height: 2.5vw;
-                width: 2.5vw;
+                height: 2.5vh;
+                width: 2.5vh;
                 background: radial-gradient(#188275, #15d7bf);
                 border-radius: 100%;
                 transform-origin: center center;

@@ -1,10 +1,9 @@
 .planet-wrapper {
     position: absolute;
-    // height: 82vh;
-    // width: 82vh;
     height: 100vh;
     width: 100vw;
     pointer-events: none;
+    animation: appearing 1.75s ease-in-out;
 
     .planet-blur {
         position: absolute;
@@ -18,18 +17,79 @@
         z-index: 0;
     }
 
-    .planet {
-        border: 1px solid rgb(255, 255, 255);
+    .inner-halo,
+    .planet,
+    .ink-planet {
+        position: absolute;
+        left: 33%;
+        top: -35vw;
         height: 32vw;
         width: 32vw;
         border-radius: 100%;
-        position: absolute;
-        filter: blur(0vw);
-        left: 33%;
-        top: -35vw;
+    }
+
+    .planet {
+        mask-repeat: no-repeat;
+        mask-size: cover;
+        mask-position: center;
+        animation-fill-mode: forwards;
+        animation: rotate 35s linear infinite;
+        z-index: 0;
+    }
+
+    .ink-planet {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        box-shadow: inset 0vw 0vw 1.9vw 3vw white;
+        z-index: 0;
+    }
+
+    .inner-halo {
+        z-index: 1;
+        box-shadow: inset 0vw 0vw 4vw 4.5vw rgb(255, 255, 255);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        background-color: rgb(255, 227, 255);
+    }
+
+    25% {
+        background-color: rgb(187, 197, 255);
+    }
+
+    50% {
+        background-color: rgb(130, 238, 215);
+    }
+
+    54% {
+        background-color: rgb(217, 255, 0);
+    }
+
+    60% {
+        background-color: rgb(201, 208, 247);
+    }
+
+    65% {
+        background-color: rgb(60, 192, 181);
+    }
+
+    70% {
+        background-color: rgb(209, 237, 255);
+    }
+
+    80% {
+        background-color: rgb(122, 96, 240);
+    }
+
+    90% {
+        background-color: rgb(255, 255, 255);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background-color: rgb(255, 227, 255);
     }
 }

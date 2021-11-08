@@ -3,12 +3,14 @@ import React from 'react'
 import { InfoBlock, Planet } from '~components'
 import './Research.scss'
 import { aipepople, graduallyImprove } from './images'
+import { motherboard_solid, motherboard_transparent } from '~icons'
 
 export function Research() {
     return (
         <div className="page-research">
             {/* <div className="menu-plug"></div> */}
-            <Planet img={aipepople} />
+            {/* <Planet img={motherboard_solid as string} /> */}
+            <Planet img={motherboard_transparent as string} isInk={false} />
             <h1>Research / AI</h1>
             <h2>
                 GPU-Accelerated Robotics Simulation for <br></br>Distributed Reinforcement Learning

@@ -2,19 +2,13 @@
     padding: var(--page-padding);
     --grid-padding: 1.5vh;
 
-    .visual-planet {
-        width: 45vh;
-        height: 45vh;
-        z-index: 1;
-        position: absolute;
-        top: -8vh;
-
-        left: 61vh;
-        border-radius: 100%;
-        background-image: url(./images/ink4.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        box-shadow: 0vw 0vw 4.9vw 3vw rgb(224, 224, 224);
+    .planet-wrapper {
+        .ink-planet {
+            background-size: 70%;
+            transform: rotate(318deg);
+            animation: color-metamorphosis 30s linear infinite;
+            animation-fill-mode: forwards;
+        }
     }
 
     h2 {
@@ -38,7 +32,21 @@
 
 @media (max-width: 800px) {
     .page-visual-art-wrapper {
-        padding: var(--mini-page-padding);
+        // padding: var(--mini-page-padding);
         --grid-padding: 1.5vh;
+    }
+}
+
+@keyframes color-metamorphosis {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(360deg);
+    }
+
+    100% {
+        filter: hue-rotate(0deg);
     }
 }

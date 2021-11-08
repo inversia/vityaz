@@ -1,15 +1,17 @@
 import React from 'react'
 import './VisualArt.scss'
+import { Planet } from '~components'
 import { OilPaintings } from './OilPainting'
 import { Sketches } from './Sketches'
 import { Sculptures } from './Sсulptures'
+import { turquoise_ink } from '~icons'
 
 export function VisualArt() {
     return (
         <div className="page-visual-art-wrapper">
-            <div className="visual-planet"></div>
+            {/* <div className="visual-planet"></div> */}
+            <Planet img={turquoise_ink as string} isInk={true} />
             <h1>Visual Art</h1>
-
             <h2>Lorem ipsum may be used as a placeholder before final copy is available</h2>
             <OilPaintings />
 
