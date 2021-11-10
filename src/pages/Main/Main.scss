@@ -7,14 +7,11 @@
         position: relative;
         background-image: url(/icons/circular_shadow.svg);
         background-repeat: no-repeat;
-        // background-size: 80%;
         background-size: 130vh;
-        // background-position: 10vw -50vh;
         background-position: 10vw -50vh;
         left: 0%;
         top: -60%;
         user-select: none;
-
         // --fluid-border-radius: 8vw 8vw 0vw 0vw;
         --fluid-border-radius: 50% 20% 70% 50% / 30% 20% 130% 70%;
 
@@ -34,7 +31,6 @@
         }
 
         .planetary-menu {
-            // border: 2px solid rgb(208, 255, 0);
             height: 100vh;
             display: flex;
             flex-direction: row;

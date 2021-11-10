@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react'
 import { shuffle } from 'lodash'
 import './OilPaintings.scss'
+import { Image } from '../Image'
 import * as _squareImages from './images'
 import * as _rectImages from './images'
 
@@ -34,110 +35,137 @@ const isSquare = [
 ]
 
 const images = isSquare.map(yes => {
-    return yes ? squareImages.pop() : rectImages.pop()
+    const image = yes ? squareImages.pop() : rectImages.pop()
+    if (!image) throw new Error(`no ${yes ? 'square' : 'non-square'} images left?`)
+    return image
 })
 
-export function OilPaintings() {
+export function OilPaintings({
+    isPicFullSize,
+    setIsPicFullSize,
+    setCurrentPicArray,
+    setCurrentIndex
+}: {
+    isPicFullSize: boolean
+    setIsPicFullSize: (b: boolean) => void
+    setCurrentPicArray: (arr: string[]) => void
+    setCurrentIndex: (i: number) => void
+}) {
     return (
         <>
-            <div className="chaotic-pic">
-                <div className="block1">
-                    <>
-                        <div
-                            style={{
-                                backgroundImage: `url(${images[0]!})`
-                            }}
-                        >
-                            One
-                        </div>
+            {images.length !== 0 && (
+                <div className="chaotic-pic">
+                    <div className="block1">
+                        <>
+                            <Image
+                                index={0}
+                                picturesArray={images}
+                                setIsPicFullSize={setIsPicFullSize}
+                                setCurrentPicArray={setCurrentPicArray}
+                                setCurrentIndex={setCurrentIndex}
+                            />
 
-                        <div
-                            style={{
-                                backgroundImage: `url(${images[1]!})`
-                            }}
-                        >
-                            Two
-                        </div>
-                    </>
-                    <div
-                        className="block1three"
-                        style={{
-                            backgroundImage: `url(${images[2]!})`
-                        }}
-                    >
-                        Three
-                    </div>
-                </div>
+                            <Image
+                                index={1}
+                                picturesArray={images}
+                                setIsPicFullSize={setIsPicFullSize}
+                                setCurrentPicArray={setCurrentPicArray}
+                                setCurrentIndex={setCurrentIndex}
+                            />
+                        </>
 
-                <div className="block2">
-                    <div className="a2">
-                        <div
-                            style={{
-                                backgroundImage: `url(${images[3]!})`
-                            }}
-                        ></div>
-                        <div
-                            style={{
-                                backgroundImage: `url(${images[4]!})`
-                            }}
-                        ></div>
-                        <div
-                            style={{
-                                backgroundImage: `url(${images[5]!})`
-                            }}
-                        ></div>
-                        <div
-                            style={{
-                                backgroundImage: `url(${images[6]!})`
-                            }}
-                        ></div>
+                        <Image
+                            index={2}
+                            picturesArray={images}
+                            className="block1three"
+                            setIsPicFullSize={setIsPicFullSize}
+                            setCurrentPicArray={setCurrentPicArray}
+                            setCurrentIndex={setCurrentIndex}
+                        />
                     </div>
 
-                    <>
-                        <div
-                            style={{
-                                backgroundImage: `url(${images[7]!})`
-                            }}
-                        >
-                            GOGOGOG
-                            <div
+                    <div className="block2">
+                        <div className="a2">
+                            <Image
+                                index={3}
+                                picturesArray={images}
+                                setIsPicFullSize={setIsPicFullSize}
+                                setCurrentPicArray={setCurrentPicArray}
+                                setCurrentIndex={setCurrentIndex}
+                            />
+                            <Image
+                                index={4}
+                                picturesArray={images}
+                                setIsPicFullSize={setIsPicFullSize}
+                                setCurrentPicArray={setCurrentPicArray}
+                                setCurrentIndex={setCurrentIndex}
+                            />
+                            <Image
+                                index={5}
+                                picturesArray={images}
+                                setIsPicFullSize={setIsPicFullSize}
+                                setCurrentPicArray={setCurrentPicArray}
+                                setCurrentIndex={setCurrentIndex}
+                            />
+                            <Image
+                                index={6}
+                                picturesArray={images}
+                                setIsPicFullSize={setIsPicFullSize}
+                                setCurrentPicArray={setCurrentPicArray}
+                                setCurrentIndex={setCurrentIndex}
+                            />
+                        </div>
+                        {/* <div
                                 style={{
-                                    backgroundImage: `url(${images[8]!})`
+                                    backgroundImage: `url(${images[7]!})`
                                 }}
-                            ></div>
-                            <div
-                                style={{
-                                    backgroundImage: `url(${images[9]!})`
-                                }}
-                            ></div>
-                        </div>
-                        <div
-                            style={{
-                                backgroundImage: `url(${images[10]!})`
-                            }}
-                        >
-                            Five
-                        </div>
-                    </>
-                </div>
+                            > */}
+                        {/* GOGOGOG */}
+                        {/* <div
+                                    style={{
+                                        backgroundImage: `url(${images[8]!})`
+                                    }}
+                                ></div>
+                                <div
+                                    style={{
+                                        backgroundImage: `url(${images[9]!})`
+                                    }}
+                                ></div> */}
+                        {/* </div> */}
+                        <Image
+                            index={7}
+                            picturesArray={images}
+                            setIsPicFullSize={setIsPicFullSize}
+                            setCurrentPicArray={setCurrentPicArray}
+                            setCurrentIndex={setCurrentIndex}
+                        />
+                        <Image
+                            index={10}
+                            picturesArray={images}
+                            setIsPicFullSize={setIsPicFullSize}
+                            setCurrentPicArray={setCurrentPicArray}
+                            setCurrentIndex={setCurrentIndex}
+                        />
+                    </div>
 
-                <div className="block3">
-                    <div
-                        style={{
-                            backgroundImage: `url(${images[11]!})`
-                        }}
-                    >
-                        Six
-                    </div>
-                    <div
-                        style={{
-                            backgroundImage: `url(${images[12]!})`
-                        }}
-                    >
-                        Seven
+                    <div className="block3">
+                        <Image
+                            index={11}
+                            picturesArray={images}
+                            setIsPicFullSize={setIsPicFullSize}
+                            setCurrentPicArray={setCurrentPicArray}
+                            setCurrentIndex={setCurrentIndex}
+                        />
+                        <Image
+                            index={12}
+                            picturesArray={images}
+                            setIsPicFullSize={setIsPicFullSize}
+                            setCurrentPicArray={setCurrentPicArray}
+                            setCurrentIndex={setCurrentIndex}
+                        />
                     </div>
                 </div>
-            </div>
+            )}
         </>
     )
 }

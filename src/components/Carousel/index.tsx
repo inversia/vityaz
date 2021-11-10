@@ -1,10 +1,24 @@
-import React, { useRef, useCallback } from 'react'
+import React, { useRef, useCallback, useEffect } from 'react'
+import cls from 'classnames'
 import './index.scss'
-import classname from 'classnames'
 import { useStateRef, useDelay } from '~hooks'
 
-export function Carousel({ children = [] as React.ReactNode[] }) {
+export function Carousel({
+    children,
+    itemsAmount,
+    paginationOn,
+    currentIndex
+}: {
+    children: React.ReactNode[]
+    itemsAmount: number
+    paginationOn: false
+    currentIndex: number
+}) {
     const [getCurrentItem, setCurrentItem] = useStateRef(0)
+
+    useEffect(() => {
+        scrollTo(currentIndex, 'auto')
+    }, [currentIndex])
 
     const scrollerContainer = useRef<HTMLDivElement | null>(null)
 
@@ -21,16 +35,16 @@ export function Carousel({ children = [] as React.ReactNode[] }) {
         [setCurrentItem]
     )
 
-    const scrollTo = useCallback((i: number) => {
+    const scrollTo = useCallback((i: number, behavior?: 'smooth' | 'auto') => {
         const { current: el } = scrollerContainer
         el?.scrollTo({
             left: i * (el.scrollWidth / el.childElementCount),
-            behavior: 'smooth'
+            behavior: behavior || 'smooth'
         })
     }, [])
 
     function scrollToNext() {
-        scrollTo(getCurrentItem() === 43 ? 0 : getCurrentItem() + 1)
+        scrollTo(getCurrentItem() === itemsAmount ? 0 : getCurrentItem() + 1)
     }
 
     const { reschedule } = useDelay(scrollToNext, 5000, { auto: true })
@@ -49,21 +63,23 @@ export function Carousel({ children = [] as React.ReactNode[] }) {
                     </div>
                 ))}
             </div>
-            {/* <div className="carousel-pagination-wrapper">
+            <div className="carousel-pagination-wrapper">
                 <button className="left-button" onClick={() => dotClicked(getCurrentItem() - 1)} />
-                <div className="carousel-pagination">
-                    {children.map((_, i) => (
-                        <div
-                            className={classname('carousel-page-btn', {
-                                active: i === getCurrentItem()
-                            })}
-                            key={i}
-                            onClick={() => dotClicked(i)}
-                        />
-                    ))}
-                </div>
+                {paginationOn && (
+                    <div className="carousel-pagination">
+                        {children.map((_, i) => (
+                            <div
+                                className={cls('carousel-page-btn', {
+                                    active: i === getCurrentItem()
+                                })}
+                                key={i}
+                                onClick={() => dotClicked(i)}
+                            />
+                        ))}
+                    </div>
+                )}
                 <button className="right-button" onClick={() => dotClicked(getCurrentItem() + 1)} />
-            </div> */}
+            </div>
         </div>
     )
 }

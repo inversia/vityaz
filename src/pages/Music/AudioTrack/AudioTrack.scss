@@ -3,6 +3,7 @@
     flex-direction: column;
 
     h3 {
+        font-size: 1.2vw;
         margin-bottom: 1em;
     }
 
@@ -34,7 +35,7 @@
             background-color: transparent;
             background-size: contain;
             border: none;
-            margin-right: 1vw;
+            margin-right: 2vh;
             width: 3vh;
             height: 3vh;
             cursor: pointer;
@@ -60,9 +61,12 @@
                 // height: 1.5vw;
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(to right, pink 50%, rgb(180, 130, 238));
-                // background-color: salmon;
-                // position: relative;
+                background: linear-gradient(
+                    to right,
+                    rgb(217, 255, 0) 23%,
+                    rgb(174, 255, 251),
+                    rgb(80, 82, 216)
+                );
                 border-radius: 1vw;
                 display: flex;
                 align-items: center;
@@ -80,11 +84,10 @@
                 background: radial-gradient(#188275, #15d7bf);
                 border-radius: 100%;
                 transform-origin: center center;
-                position: relative;
+                position: absolute;
                 margin-left: -1.25vw;
-                // z-index: 13;
-                // left: -100vw;
-                top: -1.8vw;
+                left: 0;
+                top: 0;
             }
         }
     }

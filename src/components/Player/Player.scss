@@ -17,6 +17,9 @@
     z-index: 6;
 
     &.is-playing {
+        .record-one {
+            transform: rotate(90deg);
+        }
         .record-two {
             animation: record-moving backwards 2s linear infinite;
         }
@@ -40,7 +43,7 @@
 
     .record-two {
         // background-image: url(./icons/pure_record.svg) !important;
-        // transform: rotate(-60deg);
+        transform: rotate(-70deg) !important;
     }
 
     .play-button,
@@ -70,48 +73,6 @@
     }
 }
 
-// @keyframes record-moving {
-//     0% {
-//         transform: translate(0px, 0px);
-//         // opacity: 0;
-//     }
-//     25% {
-//         transform: translate(1px, 1px);
-//     }
-//     50% {
-//         transform: translate(0px, 2px);
-//         // opacity: 1;
-//     }
-//     75% {
-//         transform: translate(-1px, 1px);
-//     }
-//     100% {
-//         transform: translate(0px, 0px);
-//         // opacity: 0;
-//     }
-// }
-
-// @keyframes record-moving {
-//     0% {
-//         transform: translate(0px, 0px);
-//         // opacity: 0;
-//     }
-//     25% {
-//         transform: translate(2px, 1px);
-//     }
-//     50% {
-//         transform: translate(0px, 2px);
-//         // opacity: 1;
-//     }
-//     75% {
-//         transform: translate(-2px, -1px);
-//     }
-//     100% {
-//         transform: translate(0px, 0px);
-//         // opacity: 0;
-//     }
-// }
-
 @keyframes record-moving {
     0% {
         transform: translate(0px, 0px);
@@ -130,5 +91,50 @@
     100% {
         transform: translate(0px, 0px);
         // opacity: 0;
+    }
+}
+
+@media (max-aspect-ratio: 8/8) {
+    .player-background {
+        height: 35vh;
+        width: 35vh;
+    }
+
+    .play-button-container {
+        &.is-playing {
+            .record-one {
+            }
+            .record-two {
+            }
+        }
+
+        .record-one,
+        .record-two {
+            height: 6vh;
+            width: 6vh;
+
+            bottom: 3.3vh;
+            right: 5vh;
+        }
+
+        .record-two {
+        }
+
+        .play-button,
+        .pause-button {
+            bottom: 5.25vh;
+        }
+
+        .play-button {
+            width: 2vh;
+            height: 2vh;
+            right: 6.85vh;
+        }
+
+        .pause-button {
+            right: 7.05vh;
+            width: 2vh;
+            height: 2vh;
+        }
     }
 }

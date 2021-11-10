@@ -9,7 +9,7 @@ console.log(_images)
 export function Sketches() {
     return (
         <div className="sketches-wrapper">
-            <Carousel>
+            <Carousel itemsAmount={images.length} paginationOn={false}>
                 {images.map((image, i) => (
                     <div
                         className="sketch-image"

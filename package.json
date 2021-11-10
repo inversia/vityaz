@@ -19,7 +19,6 @@
         "react": "^16.14.0",
         "react-dom": "^16.14.0",
         "react-intersection-observer": "^8.32.0",
-        "react-lottie": "^1.2.3",
         "react-material-ripple": "^0.1.1",
         "react-query": "^3.17.2",
         "react-router-dom": "^5.2.0",
@@ -28,7 +27,8 @@
         "react-virtualized": "^9.22.3",
         "reactjs-popup": "^2.0.5",
         "use-hooks": "^2.0.0-rc.5",
-        "use-onclickoutside": "^0.3.1"
+        "use-onclickoutside": "^0.3.1",
+        "video.js": "^7.15.4"
     },
     "devDependencies": {
         "@types/classnames": "^2.2.10",
@@ -36,10 +36,10 @@
         "@types/node": "^13.13.4",
         "@types/react": "^16.9.34",
         "@types/react-dom": "^16.9.6",
-        "@types/react-lottie": "^1.2.6",
         "@types/react-router-dom": "^5.1.7",
         "@types/react-transition-group": "^4.4.0",
         "@types/react-virtualized": "^9.21.11",
+        "@types/video.js": "^7.3.27",
         "@typescript-eslint/eslint-plugin": "^3.5.0",
         "@typescript-eslint/parser": "^3.5.0",
         "autoprefixer": "^9.8.1",

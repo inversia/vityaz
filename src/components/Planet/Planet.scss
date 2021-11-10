@@ -10,8 +10,8 @@
         height: 55vw;
         width: 55vw;
         border-radius: 100%;
-        top: -40vw;
-        right: 35vw;
+        top: -48vw;
+        right: 23vw;
         background: linear-gradient(0.65turn, rgb(134, 153, 158) 2%, #13434e00);
         filter: blur(6vw);
         z-index: 0;
@@ -21,7 +21,7 @@
     .planet,
     .ink-planet {
         position: absolute;
-        left: 33%;
+        left: 45vw;
         top: -35vw;
         height: 32vw;
         width: 32vw;
@@ -52,7 +52,7 @@
 
 @keyframes rotate {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(-180deg);
         background-color: rgb(255, 227, 255);
     }
 
@@ -89,7 +89,7 @@
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: rotate(180deg);
         background-color: rgb(255, 227, 255);
     }
 }

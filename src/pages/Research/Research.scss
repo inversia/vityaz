@@ -1,6 +1,8 @@
 .page-research {
-    padding: var(--page-padding);
+    // padding: var(--page-padding);
     // border: 1px springgreen solid;
+    padding-top: var(--page-padding-top);
+    // padding-bottom: var(--page-padding-bottom);
 
     .menu-plug {
         width: 56vh;
@@ -14,6 +16,21 @@
         background-size: 110%;
         background-repeat: no-repeat;
         display: flex;
+    }
+
+    p {
+        line-height: 1.75em;
+    }
+
+    h2 {
+        line-height: 1.35em;
+    }
+
+    & > p,
+    & > h2,
+    .info-block-wrapper,
+    .research-titles-wrapper {
+        padding: 0 var(--equal-page-padding);
     }
 
     .AI-people,
@@ -41,5 +58,38 @@
         background: linear-gradient(to right, #615ecc 5%, #34edd7 70%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+}
+
+@media (max-aspect-ratio: 8/7) {
+    .page-research {
+        padding: 23vh 0vh; /* ЭТО НЕ ТРОГАЕМ, иначе лишний пэддинг у100% элементов */
+
+        .planet-wrapper {
+            .planet,
+            .inner-halo {
+                top: -34.5vw;
+            }
+        }
+        .research-titles-wrapper {
+            padding: 2vh 7vh;
+            // border: 1px solid rgb(140, 255, 240);
+        }
+    }
+}
+
+@media (max-aspect-ratio: 8/13) {
+    .page-research {
+        .planet-wrapper {
+            .planet,
+            .inner-halo {
+                height: 34vw;
+                width: 34vw;
+            }
+        }
+        .research-titles-wrapper {
+            padding: 0vh 6.5vh;
+            // border: 1px solid rgb(255, 140, 140);
+        }
     }
 }

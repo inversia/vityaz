@@ -5,6 +5,7 @@
     overflow: hidden;
     position: relative;
     min-width: 635px;
+    display: flex;
 
     .media-contacts {
         display: flex;
@@ -15,7 +16,7 @@
         background-size: 100%;
         background-size: 90%;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: 108% 45%;
         position: relative;
         z-index: 12;
         // border: 1px solid magenta;
@@ -83,19 +84,16 @@
     }
 
     .background-ball {
-        // height: 100vh;
-        height: 70vw;
-        // width: 100vh;
-        width: 70vw;
-        // filter: blur(20vw);
-        filter: blur(3.5vw);
-        background: linear-gradient(#00ffc2 1%, #060028 30%);
-        transform: rotate(333deg);
-        opacity: 0.25;
+        height: 100vh;
+        width: 75vw;
+        min-width: 40vw;
+        filter: blur(7vw);
+        // background: linear-gradient(123deg, #00ffc2 7%, #060028 30%);
+        background: linear-gradient(137deg, #00d0ff 4%, #060028 65%);
+        opacity: 0.23;
         border-radius: 100%;
         position: absolute;
-        bottom: -44%;
-        left: 15%;
+        bottom: -19%;
         pointer-events: none;
     }
 }
