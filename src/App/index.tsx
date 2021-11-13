@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import 'panic-overlay' // TODO: disable in production (conditional import?)
 
 import { ProvideAppContext } from './Context'
+import { ProvideFullSizeContext } from '~components/FullSizeCarousel/Context'
 // import { facebook } from '~icons'
 
 import { Main, Research, VisualArt, Music, Contacts } from '~pages/'
@@ -12,7 +13,9 @@ export function App() {
     return (
         <Router>
             <ProvideAppContext>
-                <AppContent />
+                <ProvideFullSizeContext>
+                    <AppContent />
+                </ProvideFullSizeContext>
             </ProvideAppContext>
         </Router>
     )

@@ -1,19 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import cls from 'classnames'
 import './FullSizeCarousel.scss'
 import { Carousel } from '~components'
+import { useFullSizeContext } from '~components/FullSizeCarousel/Context'
 
-export function FullSizeCarousel({
-    currentIndex,
-    currentPicArray,
-    isPicFullSize,
-    setIsPicFullSize
-}: {
-    currentIndex?: number
-    currentPicArray: string[]
-    isPicFullSize: boolean
-    setIsPicFullSize: (b: boolean) => void
-}) {
+export function FullSizeCarousel() {
+    const { currentIndex, currentPicArray, isPicFullSize, setIsPicFullSize } = useFullSizeContext()
+
     return (
         <div className={cls('full-size-wrapper', { 'not-visible': !isPicFullSize })}>
             <button onClick={() => setIsPicFullSize(false)}></button>

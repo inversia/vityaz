@@ -1,5 +1,6 @@
 export * from './Carousel'
 // export * from './Footer'
+export * from './Image'
 export * from './InfoBlock'
 export * from './Menu'
 export * from './Planet'

@@ -1,17 +1,23 @@
 import React from 'react'
 import cls from 'classnames'
+import { Image } from '~components'
 import './InfoBlock.scss'
+import { useFullSizeContext } from '~components/FullSizeCarousel'
 
 export function InfoBlock({
     text,
     image,
     textAtRight,
-    isVertical
+    isVertical,
+    index,
+    picturesArray
 }: {
     text: string
     image?: string
     textAtRight?: boolean | undefined
     isVertical?: boolean | undefined
+    index?: number
+    picturesArray?: string[]
 }) {
     return (
         <div
@@ -23,7 +29,15 @@ export function InfoBlock({
             <div className="info-wrapper">
                 <div className="info">{text}</div>
             </div>
-            <div className="illustration" style={{ backgroundImage: `url(${image})` }}></div>
+            {!picturesArray && image ? (
+                <div className="illustration" style={{ backgroundImage: `url(${image})` }}></div>
+            ) : (
+                <Image
+                    index={index || 0}
+                    picturesArray={picturesArray || []}
+                    className={'illustration'}
+                />
+            )}
         </div>
     )
 }

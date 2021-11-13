@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react'
 import { shuffle } from 'lodash'
 import './OilPaintings.scss'
-import { Image } from '../Image'
+import { Image } from '~components'
 import * as _squareImages from './images'
 import * as _rectImages from './images'
 
@@ -40,80 +40,27 @@ const images = isSquare.map(yes => {
     return image
 })
 
-export function OilPaintings({
-    isPicFullSize,
-    setIsPicFullSize,
-    setCurrentPicArray,
-    setCurrentIndex
-}: {
-    isPicFullSize: boolean
-    setIsPicFullSize: (b: boolean) => void
-    setCurrentPicArray: (arr: string[]) => void
-    setCurrentIndex: (i: number) => void
-}) {
+export function OilPaintings() {
     return (
         <>
             {images.length !== 0 && (
                 <div className="chaotic-pic">
                     <div className="block1">
                         <>
-                            <Image
-                                index={0}
-                                picturesArray={images}
-                                setIsPicFullSize={setIsPicFullSize}
-                                setCurrentPicArray={setCurrentPicArray}
-                                setCurrentIndex={setCurrentIndex}
-                            />
+                            <Image index={0} picturesArray={images} />
 
-                            <Image
-                                index={1}
-                                picturesArray={images}
-                                setIsPicFullSize={setIsPicFullSize}
-                                setCurrentPicArray={setCurrentPicArray}
-                                setCurrentIndex={setCurrentIndex}
-                            />
+                            <Image index={1} picturesArray={images} />
                         </>
 
-                        <Image
-                            index={2}
-                            picturesArray={images}
-                            className="block1three"
-                            setIsPicFullSize={setIsPicFullSize}
-                            setCurrentPicArray={setCurrentPicArray}
-                            setCurrentIndex={setCurrentIndex}
-                        />
+                        <Image index={2} picturesArray={images} className="block1three" />
                     </div>
 
                     <div className="block2">
                         <div className="a2">
-                            <Image
-                                index={3}
-                                picturesArray={images}
-                                setIsPicFullSize={setIsPicFullSize}
-                                setCurrentPicArray={setCurrentPicArray}
-                                setCurrentIndex={setCurrentIndex}
-                            />
-                            <Image
-                                index={4}
-                                picturesArray={images}
-                                setIsPicFullSize={setIsPicFullSize}
-                                setCurrentPicArray={setCurrentPicArray}
-                                setCurrentIndex={setCurrentIndex}
-                            />
-                            <Image
-                                index={5}
-                                picturesArray={images}
-                                setIsPicFullSize={setIsPicFullSize}
-                                setCurrentPicArray={setCurrentPicArray}
-                                setCurrentIndex={setCurrentIndex}
-                            />
-                            <Image
-                                index={6}
-                                picturesArray={images}
-                                setIsPicFullSize={setIsPicFullSize}
-                                setCurrentPicArray={setCurrentPicArray}
-                                setCurrentIndex={setCurrentIndex}
-                            />
+                            <Image index={3} picturesArray={images} />
+                            <Image index={4} picturesArray={images} />
+                            <Image index={5} picturesArray={images} />
+                            <Image index={6} picturesArray={images} />
                         </div>
                         {/* <div
                                 style={{
@@ -132,37 +79,13 @@ export function OilPaintings({
                                     }}
                                 ></div> */}
                         {/* </div> */}
-                        <Image
-                            index={7}
-                            picturesArray={images}
-                            setIsPicFullSize={setIsPicFullSize}
-                            setCurrentPicArray={setCurrentPicArray}
-                            setCurrentIndex={setCurrentIndex}
-                        />
-                        <Image
-                            index={10}
-                            picturesArray={images}
-                            setIsPicFullSize={setIsPicFullSize}
-                            setCurrentPicArray={setCurrentPicArray}
-                            setCurrentIndex={setCurrentIndex}
-                        />
+                        <Image index={7} picturesArray={images} />
+                        <Image index={10} picturesArray={images} />
                     </div>
 
                     <div className="block3">
-                        <Image
-                            index={11}
-                            picturesArray={images}
-                            setIsPicFullSize={setIsPicFullSize}
-                            setCurrentPicArray={setCurrentPicArray}
-                            setCurrentIndex={setCurrentIndex}
-                        />
-                        <Image
-                            index={12}
-                            picturesArray={images}
-                            setIsPicFullSize={setIsPicFullSize}
-                            setCurrentPicArray={setCurrentPicArray}
-                            setCurrentIndex={setCurrentIndex}
-                        />
+                        <Image index={11} picturesArray={images} />
+                        <Image index={12} picturesArray={images} />
                     </div>
                 </div>
             )}

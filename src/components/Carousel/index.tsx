@@ -12,13 +12,9 @@ export function Carousel({
     children: React.ReactNode[]
     itemsAmount: number
     paginationOn: false
-    currentIndex: number
+    currentIndex?: number
 }) {
     const [getCurrentItem, setCurrentItem] = useStateRef(0)
-
-    useEffect(() => {
-        scrollTo(currentIndex, 'auto')
-    }, [currentIndex])
 
     const scrollerContainer = useRef<HTMLDivElement | null>(null)
 
@@ -42,6 +38,10 @@ export function Carousel({
             behavior: behavior || 'smooth'
         })
     }, [])
+
+    useEffect(() => {
+        scrollTo(currentIndex || 0, 'auto')
+    }, [currentIndex, scrollTo])
 
     function scrollToNext() {
         scrollTo(getCurrentItem() === itemsAmount ? 0 : getCurrentItem() + 1)
