@@ -7,12 +7,16 @@ export function Carousel({
     children,
     itemsAmount,
     paginationOn,
-    currentIndex
+    arrowsOn,
+    currentIndex,
+    scrollingSpeed
 }: {
     children: React.ReactNode[]
     itemsAmount: number
-    paginationOn: false
+    paginationOn: boolean
+    arrowsOn: boolean
     currentIndex?: number
+    scrollingSpeed?: number
 }) {
     const [getCurrentItem, setCurrentItem] = useStateRef(0)
 
@@ -44,10 +48,10 @@ export function Carousel({
     }, [currentIndex, scrollTo])
 
     function scrollToNext() {
-        scrollTo(getCurrentItem() === itemsAmount ? 0 : getCurrentItem() + 1)
+        scrollTo(getCurrentItem() === itemsAmount - 1 ? 0 : getCurrentItem() + 1)
     }
 
-    const { reschedule } = useDelay(scrollToNext, 5000, { auto: true })
+    const { reschedule } = useDelay(scrollToNext, scrollingSpeed || 5000, { auto: true })
 
     function dotClicked(i: number) {
         reschedule()
@@ -64,7 +68,12 @@ export function Carousel({
                 ))}
             </div>
             <div className="carousel-pagination-wrapper">
-                <button className="left-button" onClick={() => dotClicked(getCurrentItem() - 1)} />
+                {arrowsOn && (
+                    <button
+                        className="left-button"
+                        onClick={() => dotClicked(getCurrentItem() - 1)}
+                    />
+                )}
                 {paginationOn && (
                     <div className="carousel-pagination">
                         {children.map((_, i) => (
@@ -78,7 +87,12 @@ export function Carousel({
                         ))}
                     </div>
                 )}
-                <button className="right-button" onClick={() => dotClicked(getCurrentItem() + 1)} />
+                {arrowsOn && (
+                    <button
+                        className="right-button"
+                        onClick={() => dotClicked(getCurrentItem() + 1)}
+                    />
+                )}
             </div>
         </div>
     )

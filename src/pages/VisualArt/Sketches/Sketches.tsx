@@ -8,7 +8,7 @@ const images = Object.values(_images as { [key: string]: string })
 export function Sketches() {
     return (
         <div className="sketches-wrapper">
-            <Carousel itemsAmount={images.length} paginationOn={false}>
+            <Carousel itemsAmount={images.length} paginationOn={false} arrowsOn={false}>
                 {images.map((image, i) => (
                     <Image index={i} picturesArray={images} className={'sketch-image'} key={i} />
                 ))}

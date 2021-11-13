@@ -9,7 +9,6 @@ export function Research() {
     return (
         <div className="page-research">
             {/* <div className="menu-plug"></div> */}
-            {/* <Planet img={motherboard_solid as string} /> */}
             <Planet img={motherboard_transparent as string} isInk={false} />
             <div className="research-titles-wrapper">
                 <h1>Research / AI</h1>

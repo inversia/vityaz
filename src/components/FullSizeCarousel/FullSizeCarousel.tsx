@@ -9,11 +9,13 @@ export function FullSizeCarousel() {
 
     return (
         <div className={cls('full-size-wrapper', { 'not-visible': !isPicFullSize })}>
-            <button onClick={() => setIsPicFullSize(false)}></button>
+            <button className="close" onClick={() => setIsPicFullSize(false)}></button>
             <Carousel
                 itemsAmount={currentPicArray.length}
                 paginationOn={false}
+                arrowsOn={true}
                 currentIndex={currentIndex || 0}
+                scrollingSpeed={180000}
             >
                 {currentPicArray.map((image, i) => (
                     <div

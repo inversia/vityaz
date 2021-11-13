@@ -12,10 +12,9 @@
         display: none;
     }
 
-    button {
-        height: 4vw;
-        width: 4vw;
-        background-color: rgb(0, 255, 255);
+    .close {
+        height: 3vw;
+        width: 3vw;
         position: absolute;
         top: 0;
         right: 0;
@@ -23,6 +22,14 @@
         border: none;
         outline: none;
         z-index: 101;
+        mask-image: url(~icons/close.svg);
+        mask-repeat: no-repeat;
+        mask-size: cover;
+        mask-position: center;
+        // background-color: rgba(255, 255, 255, 0);
+        background: linear-gradient(25deg, rgb(18, 141, 255) 3%, rgb(255, 196, 0) 80%);
+        // opacity: 0.2;
+        margin: 1vw;
     }
 
     .carousel {
@@ -41,6 +48,29 @@
                     background-size: contain;
                     background-position: center;
                 }
+            }
+        }
+
+        .carousel-pagination-wrapper {
+            position: absolute;
+            width: 100%;
+            top: 46%;
+
+            .right-button,
+            .left-button {
+                height: 4vw;
+                width: 4vw;
+                position: absolute;
+                z-index: 102;
+                opacity: 0.4;
+            }
+
+            .left-button {
+                left: 0;
+            }
+
+            .right-button {
+                right: 0;
             }
         }
     }

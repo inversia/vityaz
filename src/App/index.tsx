@@ -26,6 +26,7 @@ function AppContent() {
         <>
             <Menu />
             <div className="page">
+                <Route path="/" exact component={Main} />
                 <Route path="/main" exact component={Main} />
                 <Route path="/research" exact component={Research} />
                 <Route path="/visual" exact component={VisualArt} />
