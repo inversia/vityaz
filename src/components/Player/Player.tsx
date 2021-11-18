@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react'
 import cls from 'classnames'
 import './Player.scss'
-import mp3files from './music/*.mp3'
+// import mp3files from './music/*.mp3'
+const mp3files = new URL('./music/*.mp3', import.meta)
 
 const songs = Object.values(mp3files as Record<string, string>)
 

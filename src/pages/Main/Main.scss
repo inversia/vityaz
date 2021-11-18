@@ -5,7 +5,7 @@
     .main-wrapper {
         font-family: 'Comfortaa', cursive;
         position: relative;
-        background-image: url(/icons/circular_shadow.svg);
+        background-image: url(../../icons/circular_shadow.svg);
         background-repeat: no-repeat;
         background-size: 130vh;
         background-position: 10vw -50vh;
@@ -16,7 +16,7 @@
         --fluid-border-radius: 50% 20% 70% 50% / 30% 20% 130% 70%;
 
         .background-planet {
-            background-image: url(~/icons/motherboard_transparent.svg);
+            background-image: url(../../icons/motherboard_transparent.svg);
             background-repeat: no-repeat;
             height: 33vw;
             width: 33vw;

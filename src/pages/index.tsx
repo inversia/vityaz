@@ -1,3 +1,4 @@
+export * from './About'
 export * from './Main'
 export * from './Music'
 export * from './Research'
