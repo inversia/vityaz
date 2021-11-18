@@ -2,6 +2,7 @@ import React from 'react'
 import './PlanetaryMenu.scss'
 import { NotesBackground } from './NotesBackground'
 import { NoteGenerator } from './NoteGenerator'
+import { Motherboard } from './Motherboard'
 // import { FluidBackground } from './FluidBackground'
 
 export function PlanetaryMenu() {
@@ -21,6 +22,7 @@ export function PlanetaryMenu() {
                 <span>Music</span>
             </a>
             {/* <FluidBackground /> */}
+            <Motherboard />
             <NotesBackground />
             <NoteGenerator />
         </div>

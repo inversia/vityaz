@@ -1,0 +1,66 @@
+.motherboard-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    .motherboard {
+        z-index: 8;
+
+        &:hover {
+            // border: 1px solid fuchsia;
+            .motherboard-doulbler {
+                opacity: 1;
+                transition: all 5s ease-in-out;
+
+                animation-fill-mode: forwards;
+                // animation: rotate3linear 30s linear infinite;
+                animation: rotate3linear 15s linear infinite;
+                border: 10px solid fuchsia;
+                // transform: scale(4);
+                // background: linear-gradient(to right, #9c51ff 12%, orange 63%);
+                // background: linear-gradient(to right, #5184b3 12%, orange 63%);
+            }
+        }
+    }
+
+    .motherboard,
+    .motherboard-doulbler {
+        position: absolute;
+        right: -26vh;
+        // right: -16vw;
+        top: -4vw;
+        height: 62vh;
+        width: 97vh;
+        // background-image: url(~icons/motherboard_main.svg);
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: 100%;
+        mask-image: url(~icons/motherboard_main.svg);
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: 100%;
+        // z-index: -1;
+        opacity: 1;
+        opacity: 1;
+        background-color: #b0b0b0;
+
+        .motherboard-doulbler {
+            opacity: 1;
+            right: 10vh;
+            // background: linear-gradient(to right, #9c51ff 12%, orange 63%);
+            // background: linear-gradient(to right, #5184b3 12%, orange 63%);
+            // animation-fill-mode: forwards;
+            // animation: rotate2 35s linear infinite;
+            transform: scale(2);
+            z-index: -1;
+        }
+    }
+
+    // .motherboard-doulbler {
+    //     opacity: 0.2;
+    //     // background: linear-gradient(to right, #9c51ff 12%, orange 63%);
+    //     // background: linear-gradient(to right, #5184b3 12%, orange 63%);
+    //     animation-fill-mode: forwards;
+    //     animation: rotate 35s linear infinite;
+    // }
+}
