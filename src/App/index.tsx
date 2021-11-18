@@ -6,7 +6,7 @@ import { ProvideAppContext } from './Context'
 import { ProvideFullSizeContext } from '~components/FullSizeCarousel/Context'
 // import { facebook } from '~icons'
 
-import { Main, Research, VisualArt, Music, Contacts } from '~pages/'
+import { Main, Research, VisualArt, Music, Contacts, About } from '~pages/'
 import { Menu, Player } from '~components/'
 
 export function App() {
@@ -27,6 +27,7 @@ function AppContent() {
             <Menu />
             <div className="page">
                 <Route path="/" exact component={Main} />
+                <Route path="/about" exact component={About} />
                 <Route path="/main" exact component={Main} />
                 <Route path="/research" exact component={Research} />
                 <Route path="/visual" exact component={VisualArt} />
