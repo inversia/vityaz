@@ -1,7 +1,7 @@
 import React, { useRef, useCallback, useEffect } from 'react'
 import cls from 'classnames'
 import './index.scss'
-import { useStateRef, useDelay } from '~/hooks'
+import { useStateRef, useDelay } from '~hooks'
 
 export function Carousel({
     children,

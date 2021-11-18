@@ -3,7 +3,7 @@
     height: 45vh;
     width: 45vh;
     display: block;
-    background-image: url(../../icons/player_background.svg);
+    background-image: url(./icons/player_background.svg);
     background-size: cover;
     background-repeat: no-repeat;
     bottom: 0;
@@ -42,9 +42,8 @@
     }
 
     .record-two {
-        background-image: url(../../icons/pure_record.svg) !important;
-        // background-image: url(./icons/record.svg) !important;
-        transform: rotate(70deg) !important;
+        // background-image: url(./icons/pure_record.svg) !important;
+        transform: rotate(-70deg) !important;
     }
 
     .play-button,

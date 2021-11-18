@@ -61,8 +61,8 @@ export function NoteGenerator() {
         []
     )
 
-    // console.log(notesImages[0])
-    // console.log(Math.round(rescale(Math.random(), [0, 1], [0, notesImages.length])))
+    console.log(notesImages[0])
+    console.log(Math.round(rescale(Math.random(), [0, 1], [0, notesImages.length])))
 
     return (
         <div className="note-gen-wrapper">
