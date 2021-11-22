@@ -13,7 +13,12 @@
         height: 25.5vh;
         width: 25vh;
         border-radius: 100%;
-        background-color: rgb(255, 255, 255);
+        // background-color: rgb(255, 255, 255);
+        background-image: url(./icons/vitya.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        // background-position: right center;
+        background-position: 100% 100%;
         top: 35%;
         left: 48.7%;
         position: relative;
@@ -31,11 +36,32 @@
         border-radius: 59% 52% 53% 60%/45% 53% 52% 59%;
         padding: 2.5em;
         display: flex;
+        flex-direction: column;
         text-align: center;
 
         p {
             font-size: 1.1vw;
-            margin-bottom: 0 !important;
+            margin-bottom: 1em !important;
+        }
+    }
+
+    .biography2 {
+        position: absolute;
+        top: 5vw;
+        right: 0vw;
+        max-width: 40vw;
+        background-repeat: no-repeat;
+        background-size: contain;
+        // border: 1px solid rgb(29, 255, 217);
+        backdrop-filter: blur(10px);
+        border-radius: 59% 52% 53% 60%/45% 53% 52% 59%;
+        padding: 2.5em;
+        display: flex;
+        text-align: center;
+
+        p {
+            font-size: 1.1vw;
+            margin-bottom: 1em !important;
         }
     }
 }

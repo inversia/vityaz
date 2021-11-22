@@ -32,8 +32,8 @@
         }
 
         .github {
-            left: 12.5%;
-            top: 19.2%;
+            left: 18.3%;
+            top: 17.5%;
             // border: 1px solid rgb(255, 0, 0);
             // background-color: rgba(166, 249, 255, 0.336);
             // background: linear-gradient(#daf4ff, #f9f0fd);
@@ -41,8 +41,8 @@
         }
 
         .mail {
-            left: 31.5%;
-            top: 60%;
+            left: 37.5%;
+            top: 58%;
             // background-color: rgba(121, 141, 255, 0.336);
             // background: linear-gradient(#def8ef, #c1c0ca);
             // transform: rotate(194deg);
@@ -50,8 +50,8 @@
         }
 
         .twitter {
-            left: 52%;
-            top: 28%;
+            left: 58%;
+            top: 26%;
             // background-color: rgba(255, 121, 255, 0.336);
             // background: linear-gradient(#c8ffff, #c1c0ca);
             // border: 1px solid rgb(0, 26, 255);
@@ -61,8 +61,8 @@
             height: 10.2vh;
             width: 10.2vh;
             // border: 1px solid rgb(255, 0, 191);
-            left: 82.8%;
-            top: 20.8%;
+            left: 88.8%;
+            top: 19.2%;
             // background-color: rgba(255, 75, 150, 0.336);
             // background: linear-gradient(#def8ef, #c1c0ca);
         }
@@ -84,8 +84,8 @@
     }
 
     .background-ball {
-        height: 100vh;
-        width: 75vw;
+        height: 90vh;
+        width: 70vw;
         min-width: 40vw;
         filter: blur(7vw);
         // background: linear-gradient(123deg, #00ffc2 7%, #060028 30%);
@@ -94,6 +94,7 @@
         border-radius: 100%;
         position: absolute;
         bottom: -19%;
+        left: 16%;
         pointer-events: none;
     }
 }
