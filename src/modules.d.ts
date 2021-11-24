@@ -5,6 +5,7 @@ declare module '*.mp3' {
     const file: string
     export = file
 }
+declare module '*.mp4'
 declare module '*.jpeg'
 declare module '*.json'
 declare module '*.(jpg|png|svg)'

@@ -1,6 +1,5 @@
 .page-music {
-    // padding: var(--page-padding);
-    --video-container: 40vw;
+    // --video-container: 40vw;
     padding-top: var(--page-padding-top);
     padding-bottom: var(--page-padding-bottom);
 
@@ -13,23 +12,22 @@
 
     .music-titles-wrapper {
         padding: 0 var(--equal-page-padding);
-        // border: 1px solid red;
     }
 
     .video-container {
-        // border: 2px solid rgb(155, 127, 255);
-        position: absolute;
-        // transform: scale(1.26);
+        position: relative;
         min-height: 23vw;
         margin-top: 5vw;
         margin-bottom: 7vw;
         width: 100vw;
-        height: var(--video-container);
-        background: linear-gradient(to right, #aeffed, rgb(200, 200, 255));
+
+        .video-js {
+            margin-bottom: 5vw;
+        }
     }
 
     .music-container {
-        margin-top: calc(var(--video-container) * 1.5);
+        // margin-top: calc(var(--video-container) * 1.5);
         padding: 0 var(--equal-page-padding);
     }
 }

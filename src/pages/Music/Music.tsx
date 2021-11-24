@@ -2,8 +2,10 @@ import React from 'react'
 import { AudioTrack } from './AudioTrack'
 import './Music.scss'
 import { mantra } from './audiofiles'
-import { Planet } from '~components'
-import { circle_notes, planet_research } from '~icons'
+import { reflect, piknik } from './video'
+
+import { Planet, Player, VideoPlayer } from '~components'
+import { circle_notes, mountains } from '~icons'
 import { useVideoJS } from '~hooks'
 
 type Songs = {
@@ -14,14 +16,14 @@ const songs: Songs = [{ name: 'MANTRA', url: mantra }]
 
 // 'https://www.youtube.com/watch?v=9t7SclAXoQw'
 export function Music() {
-    const { Video } = useVideoJS({
-        poster: planet_research,
-        sources: [{ src: './video/oqotls.mp4', type: 'video/mp4' }],
-        controls: true,
-        playbackRates: [0.5, 1, 1.5, 2],
-        responsive: true,
-        name: 'erwer'
-    })
+    // const { Video } = useVideoJS({
+    //     poster: mountains,
+    //     sources: [{ src: reflect as string, type: 'video/mp4' }],
+    //     controls: true,
+    //     playbackRates: [0.5, 1, 1.5, 2],
+    //     responsive: true,
+    //     name: 'Max Cooper'
+    // })
 
     return (
         <div className="page-music">
@@ -36,7 +38,8 @@ export function Music() {
                 </p>
             </div>
             <div className="video-container">
-                <Video></Video>
+                {<VideoPlayer url={reflect as string} />}
+                {<VideoPlayer poster={mountains} url={piknik as string} />}
             </div>
             {/* {songsURLs.length > 0 && ( */}
             <div className="music-container">

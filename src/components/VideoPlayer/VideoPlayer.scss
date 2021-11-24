@@ -1,0 +1,69 @@
+.video-js {
+    // border: 1px solid yellow;
+    width: 100%;
+    max-height: 100vh;
+    box-shadow: 0.1vh 0.1vh 3vh rgba(128, 128, 128, 0.397);
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+        & > *,
+        .vjs-big-play-button,
+        button {
+            &:hover,
+            &:focus,
+            &:active,
+            &:-webkit-autofill,
+            &:-webkit-autofill:hover,
+            &:-webkit-autofill:focus {
+                background-color: transparent !important;
+            }
+        }
+    }
+
+    .vjs-poster {
+        background-size: cover;
+        // border: 1px solid salmon;
+        &:hover,
+        &:focus {
+            & > *,
+            .vjs-big-play-button {
+                &:hover,
+                &:focus,
+                &:active,
+                &:-webkit-autofill,
+                &:-webkit-autofill:hover,
+                &:-webkit-autofill:focus {
+                    background-color: transparent !important;
+                }
+            }
+        }
+    }
+
+    .vjs-big-play-button {
+        height: 7vw;
+        width: 7vw;
+        position: relative;
+        border: none;
+        background-image: url(~icons/play.svg);
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-size: 80%;
+        background-position: center;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: none;
+            background-color: rgb(255, 238, 0) !important;
+        }
+
+        .vjs-icon-placeholder {
+            display: none;
+        }
+    }
+}
