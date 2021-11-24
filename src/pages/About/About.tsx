@@ -1,9 +1,20 @@
 import React from 'react'
 import './About.scss'
+import Blobs from './blobs.svgr'
 
 export function About() {
+    const style = {
+        '--blob-pos': getRandomNumber(),
+        '--blob-pos1': getRandomNumber(),
+        '--blob-pos2': getRandomNumber(),
+        '--blob-pos3': getRandomNumber()
+    } as React.CSSProperties
+
     return (
-        <div className="page-about">
+        <div className="page-about" style={style}>
+            <div className="blobs">
+                <Blobs />
+            </div>
             <div className="avatar"></div>
             <div className="biography">
                 <p>
@@ -26,4 +37,8 @@ export function About() {
             </div>
         </div>
     )
+}
+
+function getRandomNumber() {
+    return `${Math.floor(Math.random() < 0.5 ? Math.random() * 100 : Math.random() * -100)}vw`
 }
