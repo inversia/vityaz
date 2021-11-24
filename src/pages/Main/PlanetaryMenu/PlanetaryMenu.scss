@@ -114,3 +114,93 @@
         }
     }
 }
+
+// @media (max-aspect-ratio: 15/16) {
+//     .planetary-menu {
+//         .art-planet,
+//         .music-planet,
+//         .research-planet,
+//         .logo {
+//             width: 15vh;
+//             height: 15vh;
+
+//             span {
+//                 font-size: 2vh;
+//             }
+//         }
+//     }
+// }
+
+@media (max-width: 600px) {
+    .planetary-menu {
+        margin-left: 12vh;
+        .art-planet,
+        .music-planet,
+        .research-planet,
+        .logo {
+            width: 15vh;
+            height: 15vh;
+
+            span {
+                font-size: 2vh;
+            }
+        }
+
+        .research-planet {
+            top: 25%;
+            left: -7%;
+
+            span {
+                top: 45%;
+                left: 18%;
+            }
+
+            &::after {
+                left: 10%;
+                top: 37%;
+            }
+        }
+
+        .art-planet {
+            top: 37%;
+            left: -4.5%;
+
+            span {
+                top: 45%;
+                left: 18%;
+            }
+
+            &::after {
+                left: -50%;
+                top: -2%;
+            }
+        }
+
+        .logo {
+            height: 20vh;
+            width: 20vh;
+            top: 40%;
+
+            span {
+                top: 42%;
+                left: 15%;
+                font-size: 3.3vh;
+            }
+        }
+
+        .music-planet {
+            top: 63%;
+            left: -26vh;
+
+            span {
+                top: 44%;
+                left: 27%;
+            }
+
+            &::after {
+                top: 36%;
+                left: -25%;
+            }
+        }
+    }
+}

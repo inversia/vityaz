@@ -5,7 +5,7 @@ import { mantra } from './audiofiles'
 import { reflect, piknik } from './video'
 
 import { Planet, Player, VideoPlayer } from '~components'
-import { circle_notes, mountains } from '~icons'
+import { circle_notes, oil2 } from '~icons'
 import { useVideoJS } from '~hooks'
 
 type Songs = {
@@ -39,7 +39,7 @@ export function Music() {
             </div>
             <div className="video-container">
                 {<VideoPlayer url={reflect as string} />}
-                {<VideoPlayer poster={mountains} url={piknik as string} />}
+                {<VideoPlayer poster={oil2 as string} url={piknik as string} />}
             </div>
             {/* {songsURLs.length > 0 && ( */}
             <div className="music-container">

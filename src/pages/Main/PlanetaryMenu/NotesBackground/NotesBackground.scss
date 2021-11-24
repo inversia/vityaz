@@ -37,3 +37,24 @@
         z-index: 1;
     }
 }
+
+@media (max-aspect-ratio: 8/6) {
+    .notes-background-container {
+        .notes-background {
+            width: 70vh;
+            height: 80vh;
+            right: -6%;
+            bottom: -62%;
+        }
+    }
+}
+
+@media (max-aspect-ratio: 15/16) {
+    .notes-background-container {
+        .notes-background {
+            width: 70vh;
+            height: 90vh;
+            bottom: -60%;
+        }
+    }
+}

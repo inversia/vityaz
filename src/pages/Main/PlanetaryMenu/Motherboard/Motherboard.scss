@@ -27,14 +27,10 @@
     .motherboard-doulbler {
         position: absolute;
         right: -26vh;
-        // right: -16vw;
         top: -4vw;
         height: 62vh;
         width: 97vh;
-        // background-image: url(~icons/motherboard_main.svg);
-        // background-repeat: no-repeat;
-        // background-position: center;
-        // background-size: 100%;
+
         mask-image: url(~icons/motherboard_main.svg);
         mask-repeat: no-repeat;
         mask-position: center;
@@ -63,4 +59,33 @@
     //     animation-fill-mode: forwards;
     //     animation: rotate 35s linear infinite;
     // }
+}
+
+// @media (max-aspect-ratio: 8/7) {
+//     .motherboard-wrapper {
+//         .motherboard,
+//         .motherboard-doulbler {
+//             height: 50vh;
+//             width: 80vh;
+//         }
+//     }
+// }
+@media (max-aspect-ratio: 8/6) {
+    .motherboard-wrapper {
+        .motherboard,
+        .motherboard-doulbler {
+            height: 50vh;
+            width: 80vh;
+        }
+    }
+}
+
+@media (max-aspect-ratio: 15/16) {
+    .motherboard-wrapper {
+        .motherboard,
+        .motherboard-doulbler {
+            height: 40vh;
+            width: 70vh;
+        }
+    }
 }
