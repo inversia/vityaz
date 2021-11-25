@@ -1432,7 +1432,7 @@ export function init(canvas: HTMLCanvasElement) {
         for (let i = 0; i < amount; i++) {
             const color = generateColor()
             color.r *= 10.0
-            color.g *= 10.0
+            color.g *= 7.0
             color.b *= 10.0
             const x = Math.random()
             const y = Math.random()
@@ -1466,7 +1466,7 @@ export function init(canvas: HTMLCanvasElement) {
         return radius
     }
 
-    canvas.addEventListener('mousedown', e => {
+    canvas.addEventListener('mouseover', e => {
         const posX = scaleByPixelRatio(e.offsetX)
         const posY = scaleByPixelRatio(e.offsetY)
         let pointer = pointers.find(p => p.id == -1)
@@ -1481,8 +1481,8 @@ export function init(canvas: HTMLCanvasElement) {
         const posY = scaleByPixelRatio(e.offsetY)
         updatePointerMoveData(pointer, posX, posY)
     })
-
-    window.addEventListener('mouseup', () => {
+    // было mouseup
+    window.addEventListener('mouseout', () => {
         if (pointers[0]) updatePointerUpData(pointers[0])
     })
 
@@ -1569,11 +1569,13 @@ export function init(canvas: HTMLCanvasElement) {
     type Color = { r: number; g: number; b: number }
 
     function generateColor(): Color {
-        const c = HSVtoRGB(Math.random(), 1.0, 1.0)
+        const c = HSVtoRGB(Math.random(), 1, 1.0)
         c.r *= 0.15
-        c.g *= 0.15
-        c.b *= 0.15
+        c.g *= 0.1
+        c.b *= 0.27
         return c
+
+        // везде было по 0.15 изначально
     }
 
     function HSVtoRGB(h: number, s: number, v: number): Color {

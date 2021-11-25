@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import VisibilitySensor from 'react-visibility-sensor'
 import './VisualArt.scss'
 import { Planet } from '~components'
 import { OilPaintings } from './OilPainting'
@@ -24,9 +25,9 @@ export function VisualArt() {
 
     const { currentPicArray, currentIndex, isPicFullSize } = useFullSizeContext()
 
-    console.log('currentPicArray', currentPicArray)
-    console.log('currentIndex', currentIndex)
-    console.log('isPicFullSize', isPicFullSize)
+    // console.log('currentPicArray', currentPicArray)
+    // console.log('currentIndex', currentIndex)
+    // console.log('isPicFullSize', isPicFullSize)
 
     return (
         <>
@@ -43,7 +44,7 @@ export function VisualArt() {
 
                 <h2>These are my graphic sketches! Pheheh!</h2>
                 <Sketches />
-                <div className="mountains"></div>
+                <div className="mountains" />
                 <h2 className="sculpture-h2">Oh, and here is my sculpture works!</h2>
                 <Sculptures />
             </div>
