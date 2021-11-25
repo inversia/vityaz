@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import panic from 'panic-overlay'
-panic.configure({ projectRoot: '/Users/new/if8' })
+panic.configure({ projectRoot: '/Users/new/vityaz' })
 
 // import './fonts.css'
 import './reset.css'

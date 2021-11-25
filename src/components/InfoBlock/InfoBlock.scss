@@ -7,6 +7,10 @@
     box-shadow: 0.1vh 0.1vh 3vh rgba(128, 128, 128, 0.397);
     border-radius: 2vh;
 
+    &.visible {
+        animation: appearing 0.85s ease-in-out;
+    }
+
     &.text-right {
         flex-direction: row-reverse;
 
