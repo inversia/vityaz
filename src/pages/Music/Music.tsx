@@ -4,9 +4,8 @@ import './Music.scss'
 import { mantra } from './audiofiles'
 import { reflect, piknik } from './video'
 
-import { Planet, Player, VideoPlayer } from '~components'
+import { Planet, VideoPlayer } from '~components'
 import { circle_notes, oil2 } from '~icons'
-import { useVideoJS } from '~hooks'
 
 type Songs = {
     name: string
@@ -14,17 +13,7 @@ type Songs = {
 }[]
 const songs: Songs = [{ name: 'MANTRA', url: mantra }]
 
-// 'https://www.youtube.com/watch?v=9t7SclAXoQw'
 export function Music() {
-    // const { Video } = useVideoJS({
-    //     poster: mountains,
-    //     sources: [{ src: reflect as string, type: 'video/mp4' }],
-    //     controls: true,
-    //     playbackRates: [0.5, 1, 1.5, 2],
-    //     responsive: true,
-    //     name: 'Max Cooper'
-    // })
-
     return (
         <div className="page-music">
             <Planet img={circle_notes as string} isInk={false} />

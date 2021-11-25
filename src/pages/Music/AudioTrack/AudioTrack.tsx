@@ -94,7 +94,7 @@ export function AudioTrack({ song }: { song: Song }) {
                         onMouseDown={e => showSliderPosition(e)}
                         // onTouchStart={e => showSliderPosition(e)}
                     ></div>
-                    <div className="slider" style={{ left: `${progressPercentage + 2}%` }} />
+                    <div className="slider" style={{ left: `${progressPercentage + 3.5}%` }} />
                 </div>
             </div>
         </div>

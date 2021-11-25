@@ -35,6 +35,10 @@
         animation-fill-mode: forwards;
         animation: rotate 35s linear infinite;
         z-index: 0;
+
+        &.hidden {
+            animation: none;
+        }
     }
 
     .ink-planet {
@@ -42,10 +46,32 @@
         background-size: cover;
         background-position: center;
         z-index: 0;
+        background-size: 70%;
+        transform: rotate(318deg);
+        animation: color-metamorphosis 30s linear infinite;
+        animation-fill-mode: forwards;
+
+        &.hidden {
+            animation: none;
+        }
     }
 
     .inner-halo {
         z-index: 1;
         box-shadow: inset 0vw 0vw 4vw 4.5vw rgb(255, 255, 255);
+    }
+}
+
+@keyframes color-metamorphosis {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(360deg);
+    }
+
+    100% {
+        filter: hue-rotate(0deg);
     }
 }
