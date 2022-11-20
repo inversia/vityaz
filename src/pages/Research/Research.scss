@@ -22,8 +22,11 @@
         line-height: 1.75em;
     }
 
-    h2 {
-        line-height: 1.35em;
+    h2,
+    a {
+        &.title-link {
+            line-height: 1.35em;
+        }
     }
 
     .info-block-wrapper {
@@ -32,12 +35,14 @@
 
     & > p,
     & > h2,
+    & > a,
     .research-titles-wrapper {
         padding: 0 var(--equal-page-padding);
     }
 
     .AI-people,
-    .AI-people2 {
+    .AI-people2,
+    .mozg {
         width: 100vw;
         height: 40vh;
         background-image: url(./images/AIpeople.jpg);
@@ -61,6 +66,12 @@
         background: linear-gradient(to right, #615ecc 5%, #34edd7 70%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+
+    .mozg {
+        background-image: url(./images/mosg_shirok.jpeg);
+        background-position: center center;
+        background-size: 90%;
     }
 }
 

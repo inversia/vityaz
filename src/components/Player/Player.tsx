@@ -3,9 +3,9 @@ import cls from 'classnames'
 import './Player.scss'
 import mp3files from './music/*.mp3'
 
-const songs = Object.values(mp3files as Record<string, string>)
+const songs = Object.values(mp3files as unknown as Record<string, string>)
 
-console.log(songs.length)
+// console.log(songs.length)
 
 function loopNumber(i: number, length: number) {
     return (length + (i % length)) % length

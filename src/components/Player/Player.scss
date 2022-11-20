@@ -19,9 +19,10 @@
     &.is-playing {
         .record-one {
             transform: rotate(90deg);
+            animation: record-moving backwards 2s linear infinite;
         }
         .record-two {
-            animation: record-moving backwards 2s linear infinite;
+            // animation: record-moving backwards 2s linear infinite;
         }
     }
 
@@ -118,6 +119,8 @@
         }
 
         .record-two {
+            bottom: 13.3vh;
+            right: 15vh;
         }
 
         .play-button,
