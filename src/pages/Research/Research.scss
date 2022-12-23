@@ -3,6 +3,7 @@
     // border: 1px springgreen solid;
     padding-top: var(--page-padding-top);
     // padding-bottom: var(--page-padding-bottom);
+    --illustration-size: 103%;
 
     .menu-plug {
         width: 56vh;
@@ -20,6 +21,12 @@
 
     p {
         line-height: 1.75em;
+
+        a {
+            display: inline;
+            cursor: pointer;
+            color: #615ecc;
+        }
     }
 
     h2,
@@ -74,6 +81,131 @@
         background-image: url(./images/mosg_shirok.jpeg);
         background-position: center center;
         background-size: 90%;
+    }
+
+    .mozg2 {
+        background-image: url(./images/new_tiny_brain.jpg);
+        background-position: center center;
+        // background-size: 25%;
+        border-radius: 100%;
+        // width: 100vw;
+        height: 50vh;
+        width: 50vh;
+        background-repeat: no-repeat;
+        background-size: 101%;
+        margin: 10vh auto;
+    }
+
+    .non-smooth {
+        background-image: url(./images/non_smooth.jpg);
+        background-position: center center;
+        height: 55vw;
+        width: 55vw;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 10vh auto;
+    }
+
+    .tesseract {
+        background-image: url(./images/tesseract.jpg);
+        background-position: center center;
+        height: 41vh;
+        width: 100vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 10vh auto;
+    }
+
+    .in-hand {
+        background-image: url(./images/in_hand.jpg);
+        background-position: center center;
+        height: 42vh;
+        // width: 100vw;
+        width: 80vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // margin: var(--page-padding-top) auto;
+        margin: var(--equal-page-padding) auto;
+    }
+
+    .transferring-dexterous {
+        background-image: url(./images/transferring_dexterous.jpg);
+        background-position: center center;
+        height: 23vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: var(--illustration-size);
+        margin: 10vh auto;
+    }
+
+    .accelerated-policy,
+    .accelerated-policy2 {
+        background-image: url(./images/accelerated_policy.jpg);
+        background-position: center center;
+        height: 35vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: var(--illustration-size);
+        margin: 10vh auto;
+    }
+
+    .accelerated-policy2 {
+        background-image: url(./images/accelerated_policy2.jpg);
+    }
+
+    .rlgames {
+        background-image: url(./images/door-key-curriculum.gif);
+        background-position: center center;
+        height: 70vh;
+        width: 70vh;
+        background-repeat: no-repeat;
+        background-size: var(--illustration-size);
+        margin: 10vh auto;
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: center;
+    }
+
+    .envpool {
+        background-image: url(./images/envpool.jpg);
+        background-position: center center;
+        height: 50vh;
+        width: 100vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 10vh auto;
+    }
+
+    .oscar {
+        margin: 10vh;
+        display: flex;
+        justify-content: center;
+
+        &video {
+            width: 30vw;
+            height: 20vw;
+        }
+    }
+
+    .reinforcement_learning {
+        background-image: url(./images/reinforcement_learning.jpg);
+        background-position: center center;
+        height: 40vh;
+        width: 100vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 10vh auto;
+    }
+
+    .dextreme {
+        background-image: url(./images/dextreme.jpg);
+        background-position: center center;
+        height: 40vw;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: var(--equal-page-padding) auto;
+        // margin: 10vh auto;
     }
 }
 

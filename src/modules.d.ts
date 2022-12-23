@@ -13,6 +13,7 @@ declare module '*.png' {
     const file: string
     export = file
 }
+declare module '*.gif'
 // declare module '*.svg' {
 //     const file: string
 //     export = file
