@@ -1,5 +1,0 @@
-{
-    "svgoConfig": {
-        "plugins": [{ "cleanupIDs": false, "prefixIds": false }]
-    }
-}
