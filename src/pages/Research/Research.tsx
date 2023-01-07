@@ -2,9 +2,8 @@ import React from 'react'
 // import { useAppContext } from '~App/Context'
 import { InfoBlock, Planet } from '~components'
 import './Research.scss'
-import { aipepople, graduallyImprove } from './images'
+import { graduallyImprove } from './images'
 import { motherboard_transparent } from '~icons'
-import { VideoPlayer } from '~components'
 import { oscar } from './video'
 
 export function Research() {

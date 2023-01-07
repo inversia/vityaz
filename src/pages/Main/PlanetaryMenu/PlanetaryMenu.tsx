@@ -9,9 +9,6 @@ import { Motherboard } from './Motherboard'
 export function PlanetaryMenu() {
     return (
         <div className="planetary-menu">
-            {/* <a href="/visual" className="art-planet">
-                <span>Visual Art</span>
-            </a> */}
             <MenuLink path="/visual" outerClass="art-planet">
                 <span>Visual Art</span>
             </MenuLink>
