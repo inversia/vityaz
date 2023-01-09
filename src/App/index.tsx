@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import 'panic-overlay' // TODO: disable in production (conditional import?)
+// import 'panic-overlay' // TODO: disable in production (conditional import?)
 
 import { ProvideAppContext } from './Context'
 import { ProvideFullSizeContext } from '~components/FullSizeCarousel/Context'
