@@ -24,6 +24,7 @@ export function ProvideAppContext({ children }: { children: JSX.Element }) {
 
     const { pathname } = useLocation()
     const isTransparent = pathname === '/main'
+    console.log({ pathname })
 
     return (
         <appContext.Provider

@@ -62,10 +62,11 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "parcel index.html",
         "start": "rimraf dist .cache && parcel src/index.html",
-        "build": "rm -rf .parcel-cache .cache dist && parcel build --public-url ./ src/index.html",
+        "build": "rm -rf .parcel-cache .cache dist && parcel build --public-url ./ src/index.html && cp dist/index.html dist/404.html",
         "start-published": "npm run build && cd dist && python -m SimpleHTTPServer",
         "publish": "npm run build && ./publish.sh",
-        "deploy": "gh-pages -d dist"
+        "deploy": "gh-pages -d dist",
+        "serve": "cd dist && python3 -m http.server"
     },
     "keywords": [],
     "author": "",
